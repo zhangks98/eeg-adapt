@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# OS Files
+Thumbs.db
+desktop.ini
+.DS_Store
+.Spotlight-V100
+.Trashes
