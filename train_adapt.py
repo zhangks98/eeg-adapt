@@ -41,7 +41,7 @@ dfile = h5py.File(datapath, 'r')
 torch.cuda.set_device(args.gpu)
 set_random_seeds(seed=20200205, cuda=True)
 BATCH_SIZE = 16
-TRAIN_EPOCH = 1000
+TRAIN_EPOCH = 200
 
 # Randomly shuffled subject.
 subjs = [35, 47, 46, 37, 13, 27, 12, 32, 53, 54, 4, 40, 19, 41, 18, 42, 34, 7,
@@ -147,7 +147,7 @@ def reset_model(checkpoint):
 
     # Only optimize parameters that requires gradient.
     optimizer = AdamW(filter(lambda p: p.requires_grad, model.network.parameters()),
-                      lr=1*0.01, weight_decay=0.5*0.001)
+                      lr=0.01*0.01, weight_decay=0.5*0.001)
     model.compile(loss=F.nll_loss, optimizer=optimizer, iterator_seed=20200205, )
 
 
