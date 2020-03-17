@@ -21,7 +21,7 @@ from torch import nn
 logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)
 parser = argparse.ArgumentParser(
-    description='HBM within subject classification with KU Data')
+    description='Subject-specific classification with KU Data')
 parser.add_argument('datapath', type=str, help='Path to data')
 parser.add_argument('outpath', type=str, help='Path to output')
 parser.add_argument('--gpu', type=int,

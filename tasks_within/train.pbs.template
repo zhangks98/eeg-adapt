@@ -22,7 +22,7 @@
 #PBS -P 12001577
 
 ### Specify name for job
-#PBS -N KU_HBM_within_{0}
+#PBS -N train_within_{0}
 
 ### Send email notification
 #PBS -WMail_Users=kzhang015@e.ntu.edu.sg

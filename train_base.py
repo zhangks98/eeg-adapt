@@ -23,7 +23,7 @@ logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)
 
 parser = argparse.ArgumentParser(
-    description='HBM subject independent classification with KU Data')
+    description='Subject independent classification with KU Data')
 parser.add_argument('datapath', type=str, help='Path to data')
 parser.add_argument('outpath', type=str, help='Path to output')
 parser.add_argument('-fold', type=int, help='k-fold index, starts with 0')

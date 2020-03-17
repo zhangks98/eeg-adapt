@@ -22,7 +22,7 @@
 #PBS -P 12001577
 
 ### Specify name for job
-#PBS -N transfer_adapt{1}_{0}
+#PBS -N train_adapt{1}_{0}
 
 ### Standard output by default goes to file $PBS_JOBNAME.o$PBS_JOBID
 ### Standard error by default goes to file $PBS_JOBNAME.e$PBS_JOBID

@@ -22,7 +22,7 @@ logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)
 
 parser = argparse.ArgumentParser(
-    description='HBM subject adaptation classification with KU Data')
+    description='Subject adaptative classification with KU Data')
 parser.add_argument('datapath', type=str, help='Path to KU data')
 parser.add_argument('modelpath', type=str, help='Path to base model')
 parser.add_argument('outpath', type=str, help='Path to output')
