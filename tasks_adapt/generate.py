@@ -33,15 +33,34 @@ for scheme in range(1,6):
     with open(pjoin(tasks_dir, 'train.' + str(0) + '.pbs'), 'w') as f:
         f.write(content)
 
-    commands = []
+tasks_dir = "tasks_adaptr"
+command_template = "python train_adapt.py $datapath $modelpath ./result_adapt{0}/r{1} -scheme {0} -trfrate {1} -gpu {2} > $logpath/stdout.s{0}.r{1}.out &"
+makedirs(tasks_dir, exist_ok=True)
+commands = []
+for scheme in range(1,5):
     for ind, rate in enumerate(range(90, 101, 10)):
-        commands.append(command_template.format(scheme, rate, ind))
-    commands.append('wait')
-    content = sh_template.format(scheme) + '\n'.join(commands)
-    ncpu = 10
-    ngpu = 2
-    with open(pjoin(tasks_dir, 'script.' + str(1) + '.sh'), 'w') as f:
-        f.write(content)
-    content = pbs_template.format(1, scheme, ncpu, ngpu)
-    with open(pjoin(tasks_dir, 'train.' + str(1) + '.pbs'), 'w') as f:
-        f.write(content)
+        igpu = (scheme - 1) * 2 + ind
+        commands.append(command_template.format(scheme, rate, igpu))
+commands.append('wait')
+content = sh_template.format('r') + '\n'.join(commands)
+ncpu = 40
+ngpu = 8
+with open(pjoin(tasks_dir, 'script.' + str(0) + '.sh'), 'w') as f:
+    f.write(content)
+content = pbs_template.format(0, 'r', ncpu, ngpu)
+with open(pjoin(tasks_dir, 'train.' + str(0) + '.pbs'), 'w') as f:
+    f.write(content)
+
+commands = []
+scheme = 5
+for ind, rate in enumerate(range(90, 101, 10)):
+    commands.append(command_template.format(scheme, rate, ind))
+commands.append('wait')
+content = sh_template.format('r') + '\n'.join(commands)
+ncpu = 10
+ngpu = 2
+with open(pjoin(tasks_dir, 'script.' + str(1) + '.sh'), 'w') as f:
+    f.write(content)
+content = pbs_template.format(1, 'r', ncpu, ngpu)
+with open(pjoin(tasks_dir, 'train.' + str(1) + '.pbs'), 'w') as f:
+    f.write(content)
