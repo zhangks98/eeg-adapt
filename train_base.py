@@ -5,8 +5,6 @@ import argparse
 import json
 import logging
 import sys
-from copy import deepcopy
-from os.path import dirname
 from os.path import join as pjoin
 
 import h5py
@@ -36,8 +34,8 @@ fold = args.fold
 assert(fold >= 0 and fold < 54)
 # Randomly shuffled subject.
 subjs = [35, 47, 46, 37, 13, 27, 12, 32, 53, 54, 4, 40, 19, 41, 18, 42, 34, 7,
-        49, 9, 5, 48, 29, 15, 21, 17, 31, 45, 1, 38, 51, 8, 11, 16, 28, 44, 24,
-        52, 3, 26, 39, 50, 6, 23, 2, 14, 25, 20, 10, 33, 22, 43, 36, 30]
+         49, 9, 5, 48, 29, 15, 21, 17, 31, 45, 1, 38, 51, 8, 11, 16, 28, 44, 24,
+         52, 3, 26, 39, 50, 6, 23, 2, 14, 25, 20, 10, 33, 22, 43, 36, 30]
 test_subj = subjs[fold]
 train_subjs = subjs[fold+1:min(54, fold+46)] + subjs[:max(0, fold-8)]
 valid_subjs = subjs[max(0, fold-8):fold] + subjs[min(fold-8+54, 54):]

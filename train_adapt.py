@@ -4,15 +4,11 @@ import argparse
 import json
 import logging
 import sys
-from copy import deepcopy
-from os.path import dirname
 from os.path import join as pjoin
 
 import h5py
-import numpy as np
 import torch
 import torch.nn.functional as F
-from braindecode.datautil.signal_target import SignalAndTarget
 from braindecode.models.deep4 import Deep4Net
 from braindecode.torch_ext.optimizers import AdamW
 from braindecode.torch_ext.util import set_random_seeds
@@ -41,7 +37,7 @@ dfile = h5py.File(datapath, 'r')
 torch.cuda.set_device(args.gpu)
 set_random_seeds(seed=20200205, cuda=True)
 BATCH_SIZE = 16
-TRAIN_EPOCH = 200
+TRAIN_EPOCH = 400
 
 # Randomly shuffled subject.
 subjs = [35, 47, 46, 37, 13, 27, 12, 32, 53, 54, 4, 40, 19, 41, 18, 42, 34, 7,
@@ -66,6 +62,8 @@ model = Deep4Net(in_chans=in_chans, n_classes=n_classes,
                  final_conv_length='auto').cuda()
 
 # Deprecated.
+
+
 def reset_conv_pool_block(network, block_nr):
     suffix = "_{:d}".format(block_nr)
     conv = getattr(network, 'conv' + suffix)
@@ -99,7 +97,6 @@ def reset_model(checkpoint):
     # Load the state dict of the model.
     model.network.load_state_dict(checkpoint['model_state_dict'])
 
-
     # # Resets the last conv block
     # reset_conv_pool_block(model.network, block_nr=4)
     # reset_conv_pool_block(model.network, block_nr=3)
@@ -115,23 +112,23 @@ def reset_model(checkpoint):
     # nn.init.constant_(model.network.conv_classifier.bias, 0)
 
     if scheme != 5:
-        # Freeze the convolution layers.
+        # Freeze all layers.
         for param in model.network.parameters():
             param.requires_grad = False
 
-        if scheme in {1,2,3,4}:
+        if scheme in {1, 2, 3, 4}:
             # Unfreeze the FC layer.
             for param in model.network.conv_classifier.parameters():
                 param.requires_grad = True
 
-        if scheme in {2,3,4}: 
+        if scheme in {2, 3, 4}:
             # Unfreeze the conv4 layer.
             for param in model.network.conv_4.parameters():
                 param.requires_grad = True
             for param in model.network.bnorm_4.parameters():
                 param.requires_grad = True
 
-        if scheme in {3,4}:
+        if scheme in {3, 4}:
             # Unfreeze the conv3 layer.
             for param in model.network.conv_3.parameters():
                 param.requires_grad = True
@@ -147,8 +144,9 @@ def reset_model(checkpoint):
 
     # Only optimize parameters that requires gradient.
     optimizer = AdamW(filter(lambda p: p.requires_grad, model.network.parameters()),
-                      lr=0.01*0.01, weight_decay=0.5*0.001)
-    model.compile(loss=F.nll_loss, optimizer=optimizer, iterator_seed=20200205, )
+                      lr=0.05*0.01, weight_decay=0.5*0.001)
+    model.compile(loss=F.nll_loss, optimizer=optimizer,
+                  iterator_seed=20200205, )
 
 
 for fold, subj in enumerate(subjs):
@@ -158,17 +156,18 @@ for fold, subj in enumerate(subjs):
     reset_model(checkpoint)
 
     X, Y = get_data(subj)
-    cutoff = rate * 2
+    cutoff = int(rate * 160 / 100)
     # Use only session 1 data for training
-    assert(cutoff <= 200)
+    assert(cutoff <= 160)
     X_train, Y_train = X[:cutoff], Y[:cutoff]
+    X_val, Y_val = X[160:200], Y[160:200]
     X_test, Y_test = X[200:], Y[200:]
-    train_set = SignalAndTarget(X_train, y=Y_train)
-    test_set = SignalAndTarget(X_test, y=Y_test)
-    # Pass test set to validation_data to obtain test result for each epoch.
-    model.fit(train_set.X, train_set.y, epochs=TRAIN_EPOCH,
+    model.fit(X_train, Y_train, epochs=TRAIN_EPOCH,
               batch_size=BATCH_SIZE, scheduler='cosine',
-              validation_data=(test_set.X, test_set.y))
+              validation_data=(X_val, Y_val), remember_best_column='valid_loss')
     model.epochs_df.to_csv(pjoin(outpath, 'epochs' + suffix + '.csv'))
+    test_loss = model.evaluate(X_test, Y_test)
+    with open(pjoin(outpath, 'test' + suffix + '.json'), 'w') as f:
+        json.dump(test_loss, f)
 
 dfile.close()
