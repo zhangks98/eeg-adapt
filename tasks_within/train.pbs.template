@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ### The following requests all resources on 1 DGX-1 node
-#PBS -l select=1:ncpus=5:ngpus=1
+#PBS -l select=1:ncpus=40:ngpus=8
 
 ### The "select=1" specifies the number of nodes
 ### The "ncpus=40:ngpus=8" asks for acccess to all 8 GPU cards

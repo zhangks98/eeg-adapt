@@ -3,8 +3,10 @@ with open('script.sh.template', 'r') as f:
 with open('train.pbs.template', 'r') as f:
     pbs_template = f.read()
 
+
 def list_to_str(l):
     return ' '.join(map(str, l))
+
 
 all_folds = list(range(54))
 command_template = "python /home/users/ntu/kzhang01/hbm/transfer/train_base.py $datapath $outpath -fold {0} -gpu {1} > $logpath/stdout.f{0}.out &"

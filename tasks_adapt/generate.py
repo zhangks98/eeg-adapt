@@ -12,13 +12,13 @@ def list_to_str(l):
 
 command_template = "python train_adapt.py $datapath $modelpath ./result_adapt{0}/r{1} -scheme {0} -trfrate {1} -gpu {2} > $logpath/stdout.r{1}.out &"
 
-for scheme in range(1,6):
+for scheme in range(1, 6):
     tasks_dir = "tasks_adapt{}".format(scheme)
     result_dir = "result_adapt{}".format(scheme)
 
-    makedirs(tasks_dir, exist_ok = True)
-    for rate in range(10,101,10):
-        makedirs(pjoin(result_dir, "r{}".format(rate)), exist_ok = True)
+    makedirs(tasks_dir, exist_ok=True)
+    for rate in range(10, 101, 10):
+        makedirs(pjoin(result_dir, "r{}".format(rate)), exist_ok=True)
 
     commands = []
     for ind, rate in enumerate(range(10, 81, 10)):
@@ -37,7 +37,7 @@ tasks_dir = "tasks_adaptr"
 command_template = "python train_adapt.py $datapath $modelpath ./result_adapt{0}/r{1} -scheme {0} -trfrate {1} -gpu {2} > $logpath/stdout.s{0}.r{1}.out &"
 makedirs(tasks_dir, exist_ok=True)
 commands = []
-for scheme in range(1,5):
+for scheme in range(1, 5):
     for ind, rate in enumerate(range(90, 101, 10)):
         igpu = (scheme - 1) * 2 + ind
         commands.append(command_template.format(scheme, rate, igpu))

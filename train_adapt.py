@@ -144,7 +144,7 @@ def reset_model(checkpoint):
 
     # Only optimize parameters that requires gradient.
     optimizer = AdamW(filter(lambda p: p.requires_grad, model.network.parameters()),
-                      lr=0.1*0.01, weight_decay=0.5*0.001)
+                      lr=0.05*0.01, weight_decay=0.5*0.001)
     model.compile(loss=F.nll_loss, optimizer=optimizer,
                   iterator_seed=20200205, )
 
@@ -156,16 +156,16 @@ for fold, subj in enumerate(subjs):
     reset_model(checkpoint)
 
     X, Y = get_data(subj)
-    cutoff = int(rate * 80 / 100)
-    cutoff += 200
-    # Use only session 2 data for training
-    assert(cutoff <= 280)
-    X_train, Y_train = X[200:cutoff], Y[200:cutoff]
-    X_val, Y_val = X[280:300], Y[280:300]
+    cutoff = int(rate * 200 / 100)
+    # cutoff += 200
+    # Use only session 1 data for training
+    assert(cutoff <= 200)
+    X_train, Y_train = X[:cutoff], Y[:cutoff]
+    X_val, Y_val = X[200:300], Y[200:300]
     X_test, Y_test = X[300:], Y[300:]
     model.fit(X_train, Y_train, epochs=TRAIN_EPOCH,
               batch_size=BATCH_SIZE, scheduler='cosine',
-              validation_data=(X_val, Y_val), remember_best_column='valid_misclass')
+              validation_data=(X_val, Y_val), remember_best_column='valid_loss')
     model.epochs_df.to_csv(pjoin(outpath, 'epochs' + suffix + '.csv'))
     test_loss = model.evaluate(X_test, Y_test)
     with open(pjoin(outpath, 'test' + suffix + '.json'), 'w') as f:
