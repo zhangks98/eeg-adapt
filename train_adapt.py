@@ -25,6 +25,7 @@ parser.add_argument('outpath', type=str, help='Path to output')
 parser.add_argument('-scheme', type=int, help='Adaptation scheme', default=1)
 parser.add_argument(
     '-trfrate', type=int, help='The percentage of data for adaptation', default=100)
+parser.add_argument('-lr', type=float, help='Learning rate', default=0.0005)
 parser.add_argument('-gpu', type=int, help='The gpu device to use', default=0)
 
 args = parser.parse_args()
@@ -33,6 +34,7 @@ outpath = args.outpath
 modelpath = args.modelpath
 scheme = args.scheme
 rate = args.trfrate
+lr = args.lr
 dfile = h5py.File(datapath, 'r')
 torch.cuda.set_device(args.gpu)
 set_random_seeds(seed=20200205, cuda=True)
@@ -144,7 +146,7 @@ def reset_model(checkpoint):
 
     # Only optimize parameters that requires gradient.
     optimizer = AdamW(filter(lambda p: p.requires_grad, model.network.parameters()),
-                      lr=0.05*0.01, weight_decay=0.5*0.001)
+                      lr=lr, weight_decay=0.5*0.001)
     model.compile(loss=F.nll_loss, optimizer=optimizer,
                   iterator_seed=20200205, )
 

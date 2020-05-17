@@ -59,6 +59,7 @@ model = Deep4Net(in_chans=in_chans, n_classes=n_classes,
 X_train = np.zeros(X[:2].shape).astype(np.float32)
 Y_train = np.zeros(Y[:2].shape).astype(np.int64)
 
+
 def reset_model(checkpoint):
     # Load the state dict of the model.
     model.network.load_state_dict(checkpoint['model_state_dict'])
