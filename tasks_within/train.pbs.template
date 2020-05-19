@@ -37,7 +37,7 @@
 # Docker image to use for container
 #   To see available images run command: nscc-docker images
 #   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
-image="nvcr.io/nvidia/pytorch:latest"
+image="nvcr.io/nvidia/pytorch:20.01-py3"
 
 # Change to directory where job was submitted
 cd "$PBS_O_WORKDIR" || exit $?
