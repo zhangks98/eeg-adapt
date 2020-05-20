@@ -1,4 +1,4 @@
-Source Code for "Transfer Learning with Deep ConvNet for EEG Motor Imagery Classification"
+Source Code for "Transfer Learning with Deep CNN for EEG Motor Imagery Classification"
 
 ## Resources
 - Dataset: [Link](http://gigadb.org/dataset/100542)
