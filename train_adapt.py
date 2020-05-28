@@ -159,9 +159,9 @@ for fold, subj in enumerate(subjs):
 
     X, Y = get_data(subj)
     cutoff = int(rate * 200 / 100)
-    # cutoff += 200
     # Use only session 1 data for training
     assert(cutoff <= 200)
+    
     X_train, Y_train = X[:cutoff], Y[:cutoff]
     X_val, Y_val = X[200:300], Y[200:300]
     X_test, Y_test = X[300:], Y[300:]
