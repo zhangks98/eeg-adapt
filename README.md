@@ -1,4 +1,4 @@
-Source Code for "Adaptive Transfer Learning with Deep CNN for EEG Motor Imagery Classification"
+<!-- Source Code for "Adaptive Transfer Learning with Deep CNN for EEG Motor Imagery Classification" -->
 
 ## Resources
 - Raw Dataset: [Link](http://gigadb.org/dataset/100542)
