@@ -19,10 +19,10 @@ logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
 
 parser = argparse.ArgumentParser(
     description='Subject adaptative classification with KU Data')
-parser.add_argument('datapath', type=str, help='Path to KU data')
-parser.add_argument('modelpath', type=str, help='Path to base model')
-parser.add_argument('outpath', type=str, help='Path to output')
-parser.add_argument('-scheme', type=int, help='Adaptation scheme', default=1)
+parser.add_argument('datapath', type=str, help='Path to the h5 data file')
+parser.add_argument('modelpath', type=str, help='Path to the base model folder')
+parser.add_argument('outpath', type=str, help='Path to the result folder')
+parser.add_argument('-scheme', type=int, help='Adaptation scheme', default=4)
 parser.add_argument(
     '-trfrate', type=int, help='The percentage of data for adaptation', default=100)
 parser.add_argument('-lr', type=float, help='Learning rate', default=0.0005)

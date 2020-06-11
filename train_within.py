@@ -18,16 +18,16 @@ logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)
 parser = argparse.ArgumentParser(
     description='Subject-specific classification with KU Data')
-parser.add_argument('datapath', type=str, help='Path to data')
-parser.add_argument('outpath', type=str, help='Path to output')
-parser.add_argument('--gpu', type=int,
+parser.add_argument('datapath', type=str, help='Path to the h5 data file')
+parser.add_argument('outpath', type=str, help='Path to the result folder')
+parser.add_argument('-gpu', type=int,
                     help='The gpu device index to use', default=0)
-parser.add_argument('--start', type=int,
+parser.add_argument('-start', type=int,
                     help='Start of the subject index', default=1)
 parser.add_argument(
-    '--end', type=int, help='End of the subject index (not inclusive)', default=55)
-parser.add_argument('--subj', type=int, nargs='+',
-                    help='Explicitly set the subject number')
+    '-end', type=int, help='End of the subject index (not inclusive)', default=55)
+parser.add_argument('-subj', type=int, nargs='+',
+                    help='Explicitly set the subject number. This will override the start and end argument')
 args = parser.parse_args()
 
 datapath = args.datapath

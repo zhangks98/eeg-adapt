@@ -3,7 +3,7 @@ with open('script.sh.template', 'r') as f:
 with open('train.pbs.template', 'r') as f:
     pbs_template = f.read()
 
-command_template = 'python train_within.py $datapath $outpath --start {0} --end {1} --gpu {2} > $logpath/stdout.f{2}.out &'
+command_template = 'python train_within.py $datapath $outpath -start {0} -end {1} -gpu {2} > $logpath/stdout.f{2}.out &'
 
 commands = []
 for i in range(8):

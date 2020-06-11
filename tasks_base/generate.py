@@ -9,7 +9,7 @@ def list_to_str(l):
 
 
 all_folds = list(range(54))
-command_template = "python /home/users/ntu/kzhang01/hbm/transfer/train_base.py $datapath $outpath -fold {0} -gpu {1} > $logpath/stdout.f{0}.out &"
+command_template = "python train_base.py $datapath $outpath -fold {0} -gpu {1} > $logpath/stdout.f{0}.out &"
 for i, j in enumerate(range(0, len(all_folds), 8)):
     folds = all_folds[j:j+8]
     commands = []
