@@ -98,3 +98,9 @@ As an example, to train the subject-adaptive model for all subjects using the de
 python train_adapt.py $datapath $modelpath $outpath
 ```
 The `$modelpath` corresponds to the result folder of the [subject-independent classification](#subject-independent-classification), or the path to the pre-trained model.
+
+### Training on multiple GPUs
+To speed up training, you can make use of multiple GPUs. In the `tasks_*` folder, we provide a sample script for training on 8 GPUs. To generate these scripts, run:
+```sh
+python generate.py
+```
