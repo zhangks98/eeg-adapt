@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
+'''Subject-independent model evaluator.
+'''
 import argparse
 import json
 import logging

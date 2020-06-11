@@ -1,5 +1,8 @@
+'''Training script generator for subject-adaptive classification.
+'''
 from os import makedirs
 from os.path import join as pjoin
+
 with open(pjoin('tasks_adapt', 'script.sh.template'), 'r') as f:
     sh_template = f.read()
 with open(pjoin('tasks_adapt', 'train.pbs.template'), 'r') as f:

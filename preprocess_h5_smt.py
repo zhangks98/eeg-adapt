@@ -1,3 +1,5 @@
+'''Preprocessor for KU Data.
+'''
 import argparse
 from os.path import join as pjoin
 
@@ -12,7 +14,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument('source', type=str, help='Path to raw KU data')
 parser.add_argument('target', type=str, help='Path to pre-processed KU data')
 parser.add_argument('--foldered-data', action='store_true',
-                    help='DEPRECATED. DO NOT use this option ' + 
+                    help='DEPRECATED. DO NOT use this option ' +
                     'if the data is downloaded from GigaDB.')
 args = parser.parse_args()
 

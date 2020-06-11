@@ -1,3 +1,5 @@
+'''Training script generator for subject-independent classification.
+'''
 with open('script.sh.template', 'r') as f:
     sh_template = f.read()
 with open('train.pbs.template', 'r') as f:
