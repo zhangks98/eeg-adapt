@@ -1,14 +1,20 @@
-Source Code for "Adaptive Transfer Learning with Deep CNN for EEG Motor Imagery Classification".
+Codes for adaptation of a subject-independent deep convolutional neural network (CNN) based electroencephalography (EEG)-BCI system for decoding hand motor imagery (MI). Five schemes are presented, each of which fine-tunes an extensively trained, pre-trained model and adapt it to enhance the evaluation performance on a target subject.
 
 ## Citation
 ```
 TBD
 ```
 
+## Summary of Results
+| Methodology | Mean (SD) | Median | Range (Max-Min) |
+|-|-|-|-|
+| Subject-Specific | 63.54 (14.25) | 60.50 | 57.00 (100.00-43.00) |
+| Subject-Independent | 84.48 (11.72) | 86.00 | 46.00 (100.00-54.00) |
+| Subject-Adaptive<br>(Scheme 4, 100%) | 86.11 (10.40) | 88.50 | 38.00 (100.00-62.00) |
+
 ## Resources
 - Raw Dataset: [Link](http://gigadb.org/dataset/100542)
 - Pre-trained subject-independent model: [Link](https://entuedu-my.sharepoint.com/:u:/g/personal/kzhang015_e_ntu_edu_sg/EfHL2P43oP1KkNGz7dn1EvEBauP6KQ-5KxMzgGcPCaS3oA?e=K72Wzr)
-- Evaluation result: [Link](https://entuedu-my.sharepoint.com/:u:/g/personal/kzhang015_e_ntu_edu_sg/EZW09DGaiQhDpU2LMGWp3tcBrY_qIVXzq1RusLWtlP6Tww?e=SpNZou)
 
 ## Instructions
 ### Install the dependencies
