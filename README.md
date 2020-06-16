@@ -12,6 +12,8 @@ TBD
 | Subject-Independent | 84.48 (11.72) | 86.00 | 46.00 (100.00-54.00) |
 | Subject-Adaptive<br>(Scheme 4, 100%) | 86.11 (10.40) | 88.50 | 38.00 (100.00-62.00) |
 
+A detailed subject-level result can be found in [result_table.pdf](result_table.pdf)
+
 ## Resources
 - Raw Dataset: [Link](http://gigadb.org/dataset/100542)
 - Sample pre-trained subject-independent model: [Link](pretrained_models)
