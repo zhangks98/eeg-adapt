@@ -17,7 +17,7 @@ A detailed subject-level result can be found in [result_table.pdf](result_table.
 
 ## Resources
 - Raw Dataset: [Link](http://gigadb.org/dataset/100542)
-- Sample pre-trained subject-independent model: [pretrained_models](pretrained_models) folder
+- Sample pre-trained subject-independent model: [Link](https://github.com/zhangks98/eeg-adapt/tree/master/pretrained_models)
 
 ## Instructions
 ### Install the dependencies
