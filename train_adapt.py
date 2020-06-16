@@ -1,5 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
+'''Subject-adaptative classification with KU Data,
+using Deep ConvNet model from [1].
+
+References
+----------
+.. [1] Schirrmeister, R. T., Springenberg, J. T., Fiederer, L. D. J.,
+   Glasstetter, M., Eggensperger, K., Tangermann, M., Hutter, F. & Ball, T. (2017).
+   Deep learning with convolutional neural networks for EEG decoding and
+   visualization.
+   Human Brain Mapping , Aug. 2017. Online: http://dx.doi.org/10.1002/hbm.23730
+'''
 import argparse
 import json
 import logging
@@ -18,11 +29,12 @@ logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)
 
 parser = argparse.ArgumentParser(
-    description='Subject adaptative classification with KU Data')
-parser.add_argument('datapath', type=str, help='Path to KU data')
-parser.add_argument('modelpath', type=str, help='Path to base model')
-parser.add_argument('outpath', type=str, help='Path to output')
-parser.add_argument('-scheme', type=int, help='Adaptation scheme', default=1)
+    description='Subject-adaptative classification with KU Data')
+parser.add_argument('datapath', type=str, help='Path to the h5 data file')
+parser.add_argument('modelpath', type=str,
+                    help='Path to the base model folder')
+parser.add_argument('outpath', type=str, help='Path to the result folder')
+parser.add_argument('-scheme', type=int, help='Adaptation scheme', default=4)
 parser.add_argument(
     '-trfrate', type=int, help='The percentage of data for adaptation', default=100)
 parser.add_argument('-lr', type=float, help='Learning rate', default=0.0005)
@@ -161,7 +173,7 @@ for fold, subj in enumerate(subjs):
     cutoff = int(rate * 200 / 100)
     # Use only session 1 data for training
     assert(cutoff <= 200)
-    
+
     X_train, Y_train = X[:cutoff], Y[:cutoff]
     X_val, Y_val = X[200:300], Y[200:300]
     X_test, Y_test = X[300:], Y[300:]

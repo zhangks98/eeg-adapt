@@ -1,5 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
+'''Subject-independent classification with KU Data,
+using Deep ConvNet model from [1].
+
+References
+----------
+.. [1] Schirrmeister, R. T., Springenberg, J. T., Fiederer, L. D. J.,
+   Glasstetter, M., Eggensperger, K., Tangermann, M., Hutter, F. & Ball, T. (2017).
+   Deep learning with convolutional neural networks for EEG decoding and
+   visualization.
+   Human Brain Mapping , Aug. 2017. Online: http://dx.doi.org/10.1002/hbm.23730
+'''
 
 import argparse
 import json
@@ -15,16 +26,16 @@ from braindecode.datautil.signal_target import SignalAndTarget
 from braindecode.models.deep4 import Deep4Net
 from braindecode.torch_ext.optimizers import AdamW
 from braindecode.torch_ext.util import set_random_seeds
-from torch import nn
 
 logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)
 
 parser = argparse.ArgumentParser(
-    description='Subject independent classification with KU Data')
-parser.add_argument('datapath', type=str, help='Path to data')
-parser.add_argument('outpath', type=str, help='Path to output')
-parser.add_argument('-fold', type=int, help='k-fold index, starts with 0')
+    description='Subject-independent classification with KU Data')
+parser.add_argument('datapath', type=str, help='Path to the h5 data file')
+parser.add_argument('outpath', type=str, help='Path to the result folder')
+parser.add_argument('-fold', type=int,
+                    help='k-fold index, starts with 0', required=True)
 parser.add_argument('-gpu', type=int, help='The gpu device to use', default=0)
 
 args = parser.parse_args()

@@ -15,6 +15,10 @@ echo PATH=$PATH
 pip install -U -q --no-cache-dir --user Braindecode==0.4.85
 
 # change directory to correct location if required
+cd /home/users/ntu/kzhang01/hbm/transfer
+echo Changed working directory to
+pwd
+
 datapath=/home/users/ntu/kzhang01/scratch/KU_mi_smt.h5
 outpath=/home/users/ntu/kzhang01/hbm/transfer/result_base
 logpath=/home/users/ntu/kzhang01/hbm/transfer/tasks_base

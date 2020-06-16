@@ -1,3 +1,5 @@
+'''Training result validator for adaptive classification with KU data.
+'''
 import argparse
 import re
 from os import listdir
