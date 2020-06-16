@@ -6,6 +6,7 @@ TBD
 ```
 
 ## Summary of Results
+
 | Methodology | Mean (SD) | Median | Range (Max-Min) |
 |-|-|-|-|
 | Subject-Specific | 63.54 (14.25) | 60.50 | 57.00 (100.00-43.00) |
@@ -16,7 +17,7 @@ A detailed subject-level result can be found in [result_table.pdf](result_table.
 
 ## Resources
 - Raw Dataset: [Link](http://gigadb.org/dataset/100542)
-- Sample pre-trained subject-independent model: [Link](pretrained_models)
+- Sample pre-trained subject-independent model: [pretrained_models](pretrained_models) folder
 
 ## Instructions
 ### Install the dependencies
@@ -81,7 +82,7 @@ python train_base.py $datapath $outpath -fold $fold
 ```
 for `$fold` ranging [0...53] inclusive.
 
-This process is likely to take some time. We have provided a pre-trained model in the [resources](#resources) above.
+This process is likely to take some time. We have provided some sample pre-trained models in the [resources](#resources) above.
 
 #### Subject-adaptive classification
 ```
