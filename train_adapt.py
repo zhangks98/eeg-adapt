@@ -162,6 +162,9 @@ def reset_model(checkpoint):
     model.compile(loss=F.nll_loss, optimizer=optimizer,
                   iterator_seed=20200205, )
 
+cutoff = int(rate * 200 / 100)
+# Use only session 1 data for training
+assert(cutoff <= 200)
 
 for fold, subj in enumerate(subjs):
     suffix = '_s' + str(subj) + '_f' + str(fold)
@@ -170,10 +173,6 @@ for fold, subj in enumerate(subjs):
     reset_model(checkpoint)
 
     X, Y = get_data(subj)
-    cutoff = int(rate * 200 / 100)
-    # Use only session 1 data for training
-    assert(cutoff <= 200)
-
     X_train, Y_train = X[:cutoff], Y[:cutoff]
     X_val, Y_val = X[200:300], Y[200:300]
     X_test, Y_test = X[300:], Y[300:]
