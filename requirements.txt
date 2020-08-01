@@ -2,7 +2,7 @@ Braindecode==0.4.85
 certifi==2019.11.28
 cycler==0.10.0
 h5py==2.10.0
-kiwisolver==1.1.0
+kiwisolver==1.2.0
 llvmlite==0.31.0
 matplotlib==3.2.0
 mne==0.19.2
