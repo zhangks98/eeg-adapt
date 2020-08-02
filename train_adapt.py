@@ -163,8 +163,9 @@ def reset_model(checkpoint):
                   iterator_seed=20200205, )
 
 cutoff = int(rate * 200 / 100)
-# Use only session 1 data for training
+# Use only session 2 data for training
 assert(cutoff <= 200)
+cutoff += 200
 
 for fold, subj in enumerate(subjs):
     suffix = '_s' + str(subj) + '_f' + str(fold)
@@ -173,9 +174,9 @@ for fold, subj in enumerate(subjs):
     reset_model(checkpoint)
 
     X, Y = get_data(subj)
-    X_train, Y_train = X[:cutoff], Y[:cutoff]
-    X_val, Y_val = X[200:300], Y[200:300]
-    X_test, Y_test = X[300:], Y[300:]
+    X_train, Y_train = X[200:cutoff], Y[200:cutoff]
+    X_val, Y_val = X[:100], Y[:100]
+    X_test, Y_test = X[100:200], Y[100:200]
     model.fit(X_train, Y_train, epochs=TRAIN_EPOCH,
               batch_size=BATCH_SIZE, scheduler='cosine',
               validation_data=(X_val, Y_val), remember_best_column='valid_loss')

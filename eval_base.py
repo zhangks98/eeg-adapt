@@ -83,7 +83,7 @@ for fold, subj in enumerate(subjs):
     model.fit(X_train, Y_train, 0, BATCH_SIZE)
 
     X, Y = get_data(subj)
-    X_test, Y_test = X[300:], Y[300:]
+    X_test, Y_test = X[100:200], Y[100:200]
     test_loss = model.evaluate(X_test, Y_test)
     with open(pjoin(outpath, 'test_base' + suffix + '.json'), 'w') as f:
         json.dump(test_loss, f)

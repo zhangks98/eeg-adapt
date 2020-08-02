@@ -62,9 +62,9 @@ def get_data(subj):
 for subj in subjs:
     # Get data for within-subject classification
     X, Y = get_data(subj)
-    X_train, Y_train = X[:200], Y[:200]
-    X_val, Y_val = X[200:300], Y[200:300]
-    X_test, Y_test = X[300:], Y[300:]
+    X_train, Y_train = X[200:400], Y[200:400]
+    X_val, Y_val = X[:100], Y[:100]
+    X_test, Y_test = X[100:200], Y[100:200]
 
     suffix = 's' + str(subj)
     n_classes = 2
