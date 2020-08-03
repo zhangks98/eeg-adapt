@@ -15,13 +15,13 @@ echo PATH=$PATH
 pip install -U -q --no-cache-dir --user Braindecode==0.4.85
 
 # change directory to correct location if required
-cd /home/users/ntu/kzhang01/hbm/transfer
+cd /home/users/ntu/kzhang01/hbm/eeg-adapt
 echo Changed working directory to
 pwd
 
 datapath=/home/users/ntu/kzhang01/scratch/KU_mi_smt.h5
 modelpath=/home/users/ntu/kzhang01/hbm/transfer/result_base
-logpath=/home/users/ntu/kzhang01/hbm/transfer/tasks_adapt{0}
+logpath=/home/users/ntu/kzhang01/hbm/eeg-adapt/tasks_adapt{0}
 # Fix file locking disabled on this file system (/scratch) when reading hdf5
 export HDF5_USE_FILE_LOCKING='FALSE'
 
