@@ -49,4 +49,4 @@ cd "$PBS_O_WORKDIR" || exit $?
 # See full list of options with "nscc-docker run -h"
 # Pass the commands that you wish to run inside the container on the standard input
 # Edit file stdin as required
-nscc-docker run $image < script.{0}.sh > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+nscc-docker run $image < script.{0}.sh # > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
