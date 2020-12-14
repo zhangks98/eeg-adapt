@@ -10,8 +10,8 @@ TBD
 | Methodology | Mean (SD) | Median | Range (Max-Min) |
 |-|-|-|-|
 | Subject-Specific | 63.54 (14.25) | 60.50 | 57.00 (100.00-43.00) |
-| Subject-Independent | 84.48 (11.72) | 86.00 | 46.00 (100.00-54.00) |
-| Subject-Adaptive<br>(Scheme 4, 100%) | 86.11 (10.40) | 88.50 | 38.00 (100.00-62.00) |
+| Subject-Independent | 84.19 (9.98) | 84.50 | 47.50 (99.50-52.00) |
+| Subject-Adaptive<br>(Scheme 4, 80%) | 86.89 (11.41) | 88.50 | 44.00 (100.00-56.00) |
 
 A detailed subject-level result can be found in [result_table.pdf](result_table.pdf)
 
