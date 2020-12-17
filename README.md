@@ -2,7 +2,10 @@ Codes for adaptation of a subject-independent deep convolutional neural network 
 
 ## Citation
 ```
-TBD
+Kaishuo Zhang, Neethu Robinson, Seong-Whan Lee, Cuntai Guan
+Adaptive Transfer Learning for EEG Motor Imagery Classification with Deep Convolutional Neural Network
+
+Accepted for publication for Journal of Neural Networks, links will be updated soon.
 ```
 
 ## Summary of Results
