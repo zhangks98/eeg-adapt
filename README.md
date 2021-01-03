@@ -1,11 +1,19 @@
 Codes for adaptation of a subject-independent deep convolutional neural network (CNN) based electroencephalography (EEG)-BCI system for decoding hand motor imagery (MI). Five schemes are presented, each of which fine-tunes an extensively trained, pre-trained model and adapt it to enhance the evaluation performance on a target subject.
 
 ## Citation
-
-Kaishuo Zhang, Neethu Robinson, Seong-Whan Lee and Cuntai Guan, "Adaptive Transfer Learning for EEG Motor Imagery Classification with Deep Convolutional Neural Network", Neural Networks, Dec 2020.
-
-Preprint available at https://personal.ntu.edu.sg/ctguan/Publications/2020_Kaishuo_NN%20(pre).pdf
-
+```
+@article{ZHANG20211,
+title = "Adaptive transfer learning for EEG motor imagery classification with deep Convolutional Neural Network",
+journal = "Neural Networks",
+volume = "136",
+pages = "1 - 10",
+year = "2021",
+issn = "0893-6080",
+doi = "https://doi.org/10.1016/j.neunet.2020.12.013",
+url = "http://www.sciencedirect.com/science/article/pii/S0893608020304305",
+author = "Kaishuo Zhang and Neethu Robinson and Seong-Whan Lee and Cuntai Guan",
+}
+```
 
 ## Summary of Results
 
