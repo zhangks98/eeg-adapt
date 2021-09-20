@@ -31,7 +31,7 @@ A detailed subject-level result can be found in [result_table.pdf](result_table.
 
 ## Instructions
 ### Install the dependencies
-It is recommended to create a virtual environment and activate it before running the following:
+It is recommended to create a virtual environment with python version 3.7 and activate it before running the following:
 ```sh
 pip install -r requirements.txt
 ```
