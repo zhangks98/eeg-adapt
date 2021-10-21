@@ -13,8 +13,10 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from braindecode.models.deep4 import Deep4Net
-from braindecode.torch_ext.optimizers import AdamW
-from braindecode.torch_ext.util import set_random_seeds
+#from braindecode.torch_ext.optimizers import AdamW
+#from braindecode.torch_ext.util import set_random_seeds
+from optimizers import AdamW
+from util import set_random_seeds
 
 logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
                     level=logging.INFO, stream=sys.stdout)

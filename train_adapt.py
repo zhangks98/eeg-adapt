@@ -21,8 +21,10 @@ import h5py
 import torch
 import torch.nn.functional as F
 from braindecode.models.deep4 import Deep4Net
-from braindecode.torch_ext.optimizers import AdamW
-from braindecode.torch_ext.util import set_random_seeds
+#from braindecode.torch_ext.optimizers import AdamW
+#from braindecode.torch_ext.util import set_random_seeds
+from optimizers import AdamW
+from util import set_random_seeds
 from torch import nn
 
 logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',

@@ -1,4 +1,5 @@
-Braindecode==0.4.85
+#Braindecode==0.4.85
+braindecode==0.5.1
 certifi==2019.11.28
 cycler==0.10.0
 h5py==2.10.0
@@ -16,6 +17,7 @@ pytz==2019.3
 resampy==0.2.2
 scipy==1.4.1
 six==1.14.0
-torch==1.4.0
+torch==1.9.1
 torchvision==0.7.0
 tqdm==4.46.1
+brevitas==0.6.0

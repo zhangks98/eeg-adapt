@@ -24,10 +24,12 @@ import h5py
 import numpy as np
 import torch
 import torch.nn.functional as F
-from braindecode.datautil.signal_target import SignalAndTarget
+from signal_target import SignalAndTarget
 from braindecode.models.deep4 import Deep4Net
-from braindecode.torch_ext.optimizers import AdamW
-from braindecode.torch_ext.util import set_random_seeds
+#from braindecode.torch_ext.optimizers import AdamW
+from optimizers import AdamW
+#from braindecode.torch_ext.util import set_random_seeds
+from util import set_random_seeds
 from sklearn.model_selection import KFold
 
 logging.basicConfig(format='%(asctime)s %(levelname)s : %(message)s',
@@ -56,6 +58,7 @@ kf = KFold(n_splits=6)
 
 dfile = h5py.File(datapath, 'r')
 torch.cuda.set_device(args.gpu)
+#torch.cuda.manual_seed(seed=20200205)
 set_random_seeds(seed=20200205, cuda=True)
 BATCH_SIZE = 16
 TRAIN_EPOCH = 200  # consider 200 for early stopping
