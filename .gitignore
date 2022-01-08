@@ -1,0 +1,7 @@
+raw_data/
+mai-env/
+processed_data/
+eeg-adapt-results/
+deep4-results/
+quantized-results/
+__pycache__/
