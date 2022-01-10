@@ -7,9 +7,10 @@ from torch.nn.functional import elu
 
 import brevitas.nn as qnn
 from brevitas.quant import Int8Bias as BiasQuant
-from quantized_logmax import QuantLogSoftmax
 
-from braindecode.models.base import BaseModel
+#from braindecode.models.base import BaseModel
+from base import BaseModel
+
 from braindecode.torch_ext.modules import Expression, AvgPool2dWithConv
 from braindecode.torch_ext.functions import identity
 from braindecode.torch_ext.util import np_to_var
@@ -137,7 +138,7 @@ class QuantDeep4Net(BaseModel):
         model.add_module("pool_nonlin", qnn.QuantIdentity(bit_width=8))#Expression(self.first_pool_nonlin))
 
         def add_conv_pool_block(
-            model, n_filters_before, n_filters, filter_length, block_nr
+            model, n_filters_before, n_filters, filter_length, block_nr, last
         ):
             suffix = "_{:d}".format(block_nr)
             model.add_module("drop" + suffix, nn.Dropout(p=self.drop_prob))
@@ -172,18 +173,24 @@ class QuantDeep4Net(BaseModel):
                     stride=(pool_stride, 1),
                 ),
             )
-            model.add_module(
-                "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8)#Expression(self.later_pool_nonlin)
-            )
+            if not last:
+                model.add_module(
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8)#Expression(self.later_pool_nonlin)
+                )
+            else:
+                model.add_module(
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8, return_quant_tensor=True)#Expression(self.later_pool_nonlin)
+                )
+
 
         add_conv_pool_block(
-            model, n_filters_conv, self.n_filters_2, self.filter_length_2, 2
+            model, n_filters_conv, self.n_filters_2, self.filter_length_2, 2, False
         )
         add_conv_pool_block(
-            model, self.n_filters_2, self.n_filters_3, self.filter_length_3, 3
+            model, self.n_filters_2, self.n_filters_3, self.filter_length_3, 3, False
         )
         add_conv_pool_block(
-            model, self.n_filters_3, self.n_filters_4, self.filter_length_4, 4
+            model, self.n_filters_3, self.n_filters_4, self.filter_length_4, 4, True
         )
 
         # model.add_module('drop_classifier', nn.Dropout(p=self.drop_prob))
@@ -208,10 +215,9 @@ class QuantDeep4Net(BaseModel):
                 bias=True,
                 weight_bit_width=8,
                 bias_quant=BiasQuant,
-                return_quant_tensor=True
             ),
         )
-        model.add_module("softmax", QuantLogSoftmax(dim=1))
+        model.add_module("sigmoid", qnn.QuantSigmoid(bit_width=8))
         model.add_module("squeeze", Expression(_squeeze_final_output))
 
         # Initialization, xavier is same as in our paper...

@@ -24,6 +24,7 @@ import torch.nn.functional as F
 
 #from braindecode.models.deep4 import Deep4Net
 from deep4 import Deep4Net
+
 from braindecode.torch_ext.optimizers import AdamW
 from braindecode.torch_ext.util import set_random_seeds
 
@@ -69,7 +70,7 @@ for subj in subjs:
     X_test, Y_test = X[300:], Y[300:]
 
     suffix = 's' + str(subj)
-    n_classes = 2
+    n_classes = 1
     in_chans = X.shape[1]
 
     # final_conv_length = auto ensures we only get a single output in the time dimension
@@ -79,14 +80,15 @@ for subj in subjs:
 
     # these are good values for the deep model
     optimizer = AdamW(model.parameters(), lr=1 * 0.01, weight_decay=0.5*0.001)
-    model.compile(loss=F.nll_loss, optimizer=optimizer, iterator_seed=1, )
+    model.compile(loss=F.cross_entropy, optimizer=optimizer, iterator_seed=1, )
 
     model.fit(X_train, Y_train, epochs=200, batch_size=16, scheduler='cosine',
               validation_data=(X_val, Y_val), remember_best_column='valid_loss')
 
     test_loss = model.evaluate(X_test, Y_test)
-    model.epochs_df.to_csv(pjoin(outpath, 'epochs_' + suffix + '.csv'))
-    with open(pjoin(outpath, 'test_subj_' + str(subj) + '.json'), 'w') as f:
-        json.dump(test_loss, f)
+    print(test_loss)
+    # model.epochs_df.to_csv(pjoin(outpath, 'epochs_' + suffix + '.csv'))
+    # with open(pjoin(outpath, 'test_subj_' + str(subj) + '.json'), 'w') as f:
+    #     json.dump(test_loss, f)
 
 dfile.close()
