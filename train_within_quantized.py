@@ -89,5 +89,7 @@ for subj in subjs:
     model.epochs_df.to_csv(pjoin(outpath, 'epochs_' + suffix + '.csv'))
     with open(pjoin(outpath, 'test_subj_' + str(subj) + '.json'), 'w') as f:
         json.dump(test_loss, f)
+    
+    torch.save(model.state_dict(), "./model.pt")
 
 dfile.close()
