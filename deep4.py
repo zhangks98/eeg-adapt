@@ -4,11 +4,18 @@ from torch.nn import init
 from torch.nn.functional import elu
 from torch.nn import ReLU, Identity
 
-from braindecode.models.base import BaseModel
+from base import BaseModel
+
 from braindecode.torch_ext.modules import Expression, AvgPool2dWithConv
 from braindecode.torch_ext.functions import identity
 from braindecode.torch_ext.util import np_to_var
 
+from torch_modules import PrintLayer
+
+def _distribute_probability_(x):
+    #x[:,1] = 1 - x[:,0]
+    print(x)
+    return x
 
 class Deep4Net(BaseModel):
     """
@@ -194,8 +201,9 @@ class Deep4Net(BaseModel):
                 bias=True,
             ),
         )
-        model.add_module("softmax", nn.LogSoftmax(dim=1))
+        model.add_module("sigmoid", nn.Sigmoid())
         model.add_module("squeeze", Expression(_squeeze_final_output))
+        #model.add_module("redistribute", Expression(_distribute_probability_))
 
         # Initialization, xavier is same as in our paper...
         # was default from lasagne
@@ -225,7 +233,7 @@ class Deep4Net(BaseModel):
 
         init.xavier_uniform_(model.conv_classifier.weight, gain=1)
         init.constant_(model.conv_classifier.bias, 0)
-
+        #model.add_module("print", PrintLayer())
         # Start in eval mode
         model.eval()
         return model
@@ -240,6 +248,6 @@ def _squeeze_final_output(x):
         x = x[:, :, 0]
     return x
 
-
 def _transpose_time_to_spat(x):
     return x.permute(0, 3, 2, 1)
+

@@ -2,6 +2,7 @@ raw_data/
 mai-env/
 processed_data/
 eeg-adapt-results/
-deep4-results/
+deep4-results-1/
+deep4-results-2/
 quantized-results/
 __pycache__/
