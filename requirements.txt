@@ -16,7 +16,7 @@ pytz==2019.3
 resampy==0.2.2
 scipy==1.4.1
 six==1.14.0
-torch==1.5.0 #Updated to torch=1.5.0 from 1.4.0 as it is needed for brevitas
+torch==1.6.0 #Updated to torch=1.5.0 from 1.4.0 as it is needed for brevitas
 torchvision==0.7.0
 tqdm==4.46.1
 brevitas==0.6.0 #Used in the RadioML Project

@@ -78,7 +78,7 @@ class QuantDeep4Net(BaseModel):
         later_pool_class = pool_class_dict[self.later_pool_mode]
         model = nn.Sequential()
         if self.split_first_layer:
-            model.add_module("dimshuffle", Expression(_transpose_time_to_spat))
+            #model.add_module("dimshuffle", Expression(_transpose_time_to_spat))
             model.add_module(
                 "conv_time",
                 qnn.QuantConv2d(
@@ -217,8 +217,8 @@ class QuantDeep4Net(BaseModel):
                 bias_quant=BiasQuant,
             ),
         )
-        model.add_module("sigmoid", qnn.QuantSigmoid(bit_width=8))
-        model.add_module("squeeze", Expression(_squeeze_final_output))
+        #model.add_module("sigmoid", qnn.QuantSigmoid(bit_width=8))
+        #model.add_module("squeeze", Expression(_squeeze_final_output))
 
         # Initialization, xavier is same as in our paper...
         # was default from lasagne
