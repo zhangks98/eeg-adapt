@@ -75,21 +75,21 @@ for subj in subjs:
     # final_conv_length = auto ensures we only get a single output in the time dimension
     model = QuantDeep4Net(in_chans=in_chans, n_classes=n_classes,
                      input_time_length=X.shape[2],
-                     final_conv_length=7).cuda()
+                     final_conv_length=1).cuda()
 
     # these are good values for the deep model
     optimizer = AdamW(model.parameters(), lr=1 * 0.01, weight_decay=0.5*0.001)
     model.compile(loss=F.cross_entropy, optimizer=optimizer, iterator_seed=1, )
     
-    model.fit(X_train, Y_train, epochs=200, batch_size=16, scheduler='cosine', 
+    model.fit(X_train, Y_train, epochs=5, batch_size=16, scheduler='cosine', 
             validation_data=(X_val, Y_val))#, remember_best_column='valid_loss')
 
     test_loss = model.evaluate(X_test, Y_test)
     print(test_loss)
-    model.epochs_df.to_csv(pjoin(outpath, 'epochs_' + suffix + '.csv'))
-    with open(pjoin(outpath, 'test_subj_' + str(subj) + '.json'), 'w') as f:
-        json.dump(test_loss, f)
+    # model.epochs_df.to_csv(pjoin(outpath, 'epochs_' + suffix + '.csv'))
+    # with open(pjoin(outpath, 'test_subj_' + str(subj) + '.json'), 'w') as f:
+    #     json.dump(test_loss, f)
     
-    torch.save(model.state_dict(), "./model.pt")
+
 
 dfile.close()
