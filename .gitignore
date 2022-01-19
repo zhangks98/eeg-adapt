@@ -4,5 +4,8 @@ processed_data/
 eeg-adapt-results/
 deep4-results-1/
 deep4-results-2/
+results/
 quantized-results/
 __pycache__/
+.ipynb_checkpoints/
+output_estimates_only/

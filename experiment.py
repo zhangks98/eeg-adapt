@@ -14,6 +14,12 @@ from braindecode.torch_ext.util import np_to_var
 
 log = logging.getLogger(__name__)
 
+def _squeeze_final_output(x):
+    assert x.size()[3] == 1
+    x = x[:, :, :, 0]
+    if x.size()[2] == 1:
+        x = x[:, :, 0]
+    return x
 
 class RememberBest(object):
     """
@@ -366,6 +372,7 @@ class Experiment(object):
         outputs = self.model(input_vars)
 
         '''Dan: Adjusting the outputs of the module'''
+        outputs = _squeeze_final_output(outputs)
         temp = 1 - outputs[:,:]
         outputs = th.cat((temp, outputs), 1)
         '''----------------------------------------'''
@@ -403,6 +410,8 @@ class Experiment(object):
             outputs = self.model(input_vars)
 
             '''Dan: Adjusting the outputs of the module'''
+#             print(outputs)
+            outputs = _squeeze_final_output(outputs)
             temp = 1 - outputs[:,:]
             outputs = th.cat((temp, outputs), 1)
             #print("Outputs: ", outputs, " Targets: ", target_vars)

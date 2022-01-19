@@ -38,15 +38,15 @@ class QuantDeep4Net(BaseModel):
         final_conv_length,
         n_filters_time=25,
         n_filters_spat=25,
-        filter_time_length=10,
-        pool_time_length=3,
-        pool_time_stride=3,
+        filter_time_length=9,
+        pool_time_length=4,
+        pool_time_stride=4,
         n_filters_2=50,
-        filter_length_2=10,
+        filter_length_2=9,
         n_filters_3=100,
-        filter_length_3=10,
+        filter_length_3=9,
         n_filters_4=200,
-        filter_length_4=10,
+        filter_length_4=9,
         first_nonlin=elu,
         first_pool_mode="max",
         first_pool_nonlin=identity,
@@ -164,22 +164,30 @@ class QuantDeep4Net(BaseModel):
                         eps=1e-5,
                     ),
                 )
-            model.add_module("nonlin" + suffix, qnn.QuantReLU(bit_width=8))#Expression(self.later_nonlin))
+            model.add_module("nonlin" + suffix, qnn.QuantReLU(bit_width=8))
 
-            model.add_module(
-                "pool" + suffix,
-                later_pool_class(
-                    kernel_size=(self.pool_time_length, 1),
-                    stride=(pool_stride, 1),
-                ),
-            )
+                
             if not last:
                 model.add_module(
-                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8)#Expression(self.later_pool_nonlin)
+                    "pool" + suffix,
+                    later_pool_class(
+                        kernel_size=(self.pool_time_length, 1),
+                        stride=(pool_stride, 1),
+                    ),
+                )
+                model.add_module(
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8)
                 )
             else:
                 model.add_module(
-                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8, return_quant_tensor=True)#Expression(self.later_pool_nonlin)
+                    "pool" + suffix,
+                    later_pool_class(
+                        kernel_size=(5, 1),
+                        stride=(1, 1),
+                    ),
+                )
+                model.add_module(
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8, return_quant_tensor=True)
                 )
 
 
@@ -217,8 +225,8 @@ class QuantDeep4Net(BaseModel):
                 bias_quant=BiasQuant,
             ),
         )
-        model.add_module("sigmoid", qnn.QuantSigmoid(bit_width=8))
-        model.add_module("squeeze", Expression(_squeeze_final_output))
+        #model.add_module("sigmoid", qnn.QuantSigmoid(bit_width=8))
+        #model.add_module("squeeze", Expression(_squeeze_final_output))
 
         # Initialization, xavier is same as in our paper...
         # was default from lasagne
