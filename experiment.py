@@ -410,6 +410,7 @@ class Experiment(object):
             outputs = self.model(input_vars)
 
             '''Dan: Adjusting the outputs of the module'''
+#             print(outputs)
             outputs = _squeeze_final_output(outputs)
             temp = 1 - outputs[:,:]
             outputs = th.cat((temp, outputs), 1)
