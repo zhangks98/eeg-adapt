@@ -15,6 +15,14 @@ from braindecode.torch_ext.modules import Expression, AvgPool2dWithConv
 from braindecode.torch_ext.functions import identity
 from braindecode.torch_ext.util import np_to_var
 
+from brevitas.inject.enum import ScalingImplType
+from brevitas.inject.defaults import Int8ActPerTensorFloatMinMaxInit
+
+class InputQuantizer(Int8ActPerTensorFloatMinMaxInit):
+    bit_width = 16
+    min_val = -4096.0
+    max_val = 4095.0
+    scaling_impl_type = ScalingImplType.CONST # Fix the quantization range to [min_val, max_val]
 
 class QuantDeep4Net(BaseModel):
     """
@@ -77,6 +85,7 @@ class QuantDeep4Net(BaseModel):
         first_pool_class = pool_class_dict[self.first_pool_mode]
         later_pool_class = pool_class_dict[self.later_pool_mode]
         model = nn.Sequential()
+        #model.add_module("quantizer", qnn.QuantHardTanh(act_quant=InputQuantizer))
         if self.split_first_layer:
             model.add_module("dimshuffle", Expression(_transpose_time_to_spat))
             model.add_module(
@@ -88,7 +97,7 @@ class QuantDeep4Net(BaseModel):
                     stride=1,
                     weight_bit_width=8,
                     #bias_quant=BiasQuant,
-                    #return_quant_tensor=True,
+                    return_quant_tensor=True,
                 ),
             )
             model.add_module(
