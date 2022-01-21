@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 21 12:40:43 2022
+# Process ID: 11792
+# Current directory: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_6_ib_9ak86/project_StreamingFIFO_6/sol1/impl/verilog
+# Command line: vivado -mode batch -source package_ip.tcl
+# Log file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_6_ib_9ak86/project_StreamingFIFO_6/sol1/impl/verilog/vivado.log
+# Journal file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_6_ib_9ak86/project_StreamingFIFO_6/sol1/impl/verilog/vivado.jou
+#-----------------------------------------------------------
+source package_ip.tcl
