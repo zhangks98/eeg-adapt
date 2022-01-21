@@ -1,0 +1,1041 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBB180F496C061C5E",
+      "device": "xc7z020clg400-1",
+      "name": "finn_design",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "StreamingFIFO_0": "",
+      "StreamingMaxPool_Batch_0": "",
+      "StreamingDataWidthConverter_Batch_0": "",
+      "Thresholding_Batch_0": "",
+      "StreamingDataWidthConverter_Batch_1": "",
+      "ConvolutionInputGenerator1D_0": "",
+      "StreamingDataWidthConverter_Batch_2": "",
+      "StreamingFIFO_6": "",
+      "StreamingFCLayer_Batch_0": {
+        "StreamingFCLayer_Batch_0": "",
+        "StreamingFCLayer_Batch_0_wstrm": ""
+      },
+      "StreamingDataWidthConverter_Batch_3": "",
+      "StreamingMaxPool_Batch_1": "",
+      "StreamingDataWidthConverter_Batch_4": "",
+      "Thresholding_Batch_1": "",
+      "StreamingDataWidthConverter_Batch_5": "",
+      "ConvolutionInputGenerator1D_1": "",
+      "StreamingDataWidthConverter_Batch_6": "",
+      "StreamingFIFO_14": "",
+      "StreamingFCLayer_Batch_1": {
+        "StreamingFCLayer_Batch_1": "",
+        "StreamingFCLayer_Batch_1_wstrm": ""
+      },
+      "StreamingDataWidthConverter_Batch_7": "",
+      "StreamingMaxPool_Batch_2": "",
+      "StreamingDataWidthConverter_Batch_8": "",
+      "Thresholding_Batch_2": "",
+      "StreamingDataWidthConverter_Batch_9": "",
+      "ConvolutionInputGenerator1D_2": "",
+      "StreamingDataWidthConverter_Batch_10": "",
+      "StreamingFIFO_22": {
+        "fifo": ""
+      },
+      "StreamingFCLayer_Batch_2": {
+        "StreamingFCLayer_Batch_2": "",
+        "StreamingFCLayer_Batch_2_wstrm": ""
+      },
+      "StreamingDataWidthConverter_Batch_11": "",
+      "StreamingMaxPool_Batch_3": "",
+      "StreamingDataWidthConverter_Batch_12": "",
+      "Thresholding_Batch_3": "",
+      "StreamingFCLayer_Batch_3": {
+        "StreamingFCLayer_Batch_3": "",
+        "StreamingFCLayer_Batch_3_wstrm": ""
+      }
+    },
+    "interface_ports": {
+      "s_axis_0": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "finn_design_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.000000"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "25"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "m_axis_0": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "finn_design_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.000000"
+          },
+          "HAS_TKEEP": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TLAST": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TREADY": {
+            "value": "1",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "3",
+            "value_src": "const_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "s_axis_0:m_axis_0",
+            "value_src": "default"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_n",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "finn_design_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "StreamingFIFO_0": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_0:1.0",
+        "xci_name": "finn_design_StreamingFIFO_0_0"
+      },
+      "StreamingMaxPool_Batch_0": {
+        "vlnv": "xilinx.com:hls:StreamingMaxPool_Batch_0:1.0",
+        "xci_name": "finn_design_StreamingMaxPool_Batch_0_0"
+      },
+      "StreamingDataWidthConverter_Batch_0": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_0:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_0_0"
+      },
+      "Thresholding_Batch_0": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_0:1.0",
+        "xci_name": "finn_design_Thresholding_Batch_0_0"
+      },
+      "StreamingDataWidthConverter_Batch_1": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_1:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_1_0"
+      },
+      "ConvolutionInputGenerator1D_0": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator1D_0:1.0",
+        "xci_name": "finn_design_ConvolutionInputGenerator1D_0_0"
+      },
+      "StreamingDataWidthConverter_Batch_2": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_2:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_2_0"
+      },
+      "StreamingFIFO_6": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_6:1.0",
+        "xci_name": "finn_design_StreamingFIFO_6_0"
+      },
+      "StreamingFCLayer_Batch_0": {
+        "interface_ports": {
+          "out_V_V": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V_V": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "StreamingFCLayer_Batch_0": {
+            "vlnv": "xilinx.com:hls:StreamingFCLayer_Batch_0:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_0_0"
+          },
+          "StreamingFCLayer_Batch_0_wstrm": {
+            "vlnv": "xilinx.com:user:memstream:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_0_wstrm_0",
+            "parameters": {
+              "MEM_DEPTH": {
+                "value": "250"
+              },
+              "MEM_INIT": {
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/"
+              },
+              "MEM_WIDTH": {
+                "value": "360"
+              },
+              "NSTREAMS": {
+                "value": "1"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "STRM0_DEPTH": {
+                "value": "250"
+              },
+              "STRM0_OFFSET": {
+                "value": "0"
+              },
+              "STRM0_WIDTH": {
+                "value": "360"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "StreamingFCLayer_Batch_0_wstrm_m_axis_0": {
+            "interface_ports": [
+              "StreamingFCLayer_Batch_0_wstrm/m_axis_0",
+              "StreamingFCLayer_Batch_0/weights_V_V"
+            ]
+          },
+          "StreamingFCLayer_Batch_0_out_V_V": {
+            "interface_ports": [
+              "out_V_V",
+              "StreamingFCLayer_Batch_0/out_V_V"
+            ]
+          },
+          "in0_V_V_1": {
+            "interface_ports": [
+              "in0_V_V",
+              "StreamingFCLayer_Batch_0/in0_V_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "StreamingFCLayer_Batch_0_wstrm/aresetn",
+              "StreamingFCLayer_Batch_0/ap_rst_n"
+            ]
+          },
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "StreamingFCLayer_Batch_0_wstrm/aclk",
+              "StreamingFCLayer_Batch_0/ap_clk"
+            ]
+          }
+        }
+      },
+      "StreamingDataWidthConverter_Batch_3": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_3:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_3_0"
+      },
+      "StreamingMaxPool_Batch_1": {
+        "vlnv": "xilinx.com:hls:StreamingMaxPool_Batch_1:1.0",
+        "xci_name": "finn_design_StreamingMaxPool_Batch_1_0"
+      },
+      "StreamingDataWidthConverter_Batch_4": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_4:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_4_0"
+      },
+      "Thresholding_Batch_1": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_1:1.0",
+        "xci_name": "finn_design_Thresholding_Batch_1_0"
+      },
+      "StreamingDataWidthConverter_Batch_5": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_5:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_5_0"
+      },
+      "ConvolutionInputGenerator1D_1": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator1D_1:1.0",
+        "xci_name": "finn_design_ConvolutionInputGenerator1D_1_0"
+      },
+      "StreamingDataWidthConverter_Batch_6": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_6:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_6_0"
+      },
+      "StreamingFIFO_14": {
+        "vlnv": "xilinx.com:hls:StreamingFIFO_14:1.0",
+        "xci_name": "finn_design_StreamingFIFO_14_0"
+      },
+      "StreamingFCLayer_Batch_1": {
+        "interface_ports": {
+          "out_V_V": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V_V": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "StreamingFCLayer_Batch_1": {
+            "vlnv": "xilinx.com:hls:StreamingFCLayer_Batch_1:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_1_0"
+          },
+          "StreamingFCLayer_Batch_1_wstrm": {
+            "vlnv": "xilinx.com:user:memstream:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_1_wstrm_0",
+            "parameters": {
+              "MEM_DEPTH": {
+                "value": "1125"
+              },
+              "MEM_INIT": {
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/"
+              },
+              "MEM_WIDTH": {
+                "value": "320"
+              },
+              "NSTREAMS": {
+                "value": "1"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "STRM0_DEPTH": {
+                "value": "1125"
+              },
+              "STRM0_OFFSET": {
+                "value": "0"
+              },
+              "STRM0_WIDTH": {
+                "value": "320"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "in0_V_V_1": {
+            "interface_ports": [
+              "in0_V_V",
+              "StreamingFCLayer_Batch_1/in0_V_V"
+            ]
+          },
+          "StreamingFCLayer_Batch_1_out_V_V": {
+            "interface_ports": [
+              "out_V_V",
+              "StreamingFCLayer_Batch_1/out_V_V"
+            ]
+          },
+          "StreamingFCLayer_Batch_1_wstrm_m_axis_0": {
+            "interface_ports": [
+              "StreamingFCLayer_Batch_1_wstrm/m_axis_0",
+              "StreamingFCLayer_Batch_1/weights_V_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "StreamingFCLayer_Batch_1_wstrm/aresetn",
+              "StreamingFCLayer_Batch_1/ap_rst_n"
+            ]
+          },
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "StreamingFCLayer_Batch_1_wstrm/aclk",
+              "StreamingFCLayer_Batch_1/ap_clk"
+            ]
+          }
+        }
+      },
+      "StreamingDataWidthConverter_Batch_7": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_7:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_7_0"
+      },
+      "StreamingMaxPool_Batch_2": {
+        "vlnv": "xilinx.com:hls:StreamingMaxPool_Batch_2:1.0",
+        "xci_name": "finn_design_StreamingMaxPool_Batch_2_0"
+      },
+      "StreamingDataWidthConverter_Batch_8": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_8:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_8_0"
+      },
+      "Thresholding_Batch_2": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_2:1.0",
+        "xci_name": "finn_design_Thresholding_Batch_2_0"
+      },
+      "StreamingDataWidthConverter_Batch_9": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_9:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_9_0"
+      },
+      "ConvolutionInputGenerator1D_2": {
+        "vlnv": "xilinx.com:hls:ConvolutionInputGenerator1D_2:1.0",
+        "xci_name": "finn_design_ConvolutionInputGenerator1D_2_0"
+      },
+      "StreamingDataWidthConverter_Batch_10": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_10:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_10_0"
+      },
+      "StreamingFIFO_22": {
+        "interface_ports": {
+          "out_V_V": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V_V": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "fifo": {
+            "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+            "xci_name": "finn_design_fifo_0",
+            "parameters": {
+              "FIFO_DEPTH": {
+                "value": "512"
+              },
+              "FIFO_MEMORY_TYPE": {
+                "value": "auto"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "10"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "in0_V_V_1": {
+            "interface_ports": [
+              "in0_V_V",
+              "fifo/S_AXIS"
+            ]
+          },
+          "fifo_M_AXIS": {
+            "interface_ports": [
+              "out_V_V",
+              "fifo/M_AXIS"
+            ]
+          }
+        },
+        "nets": {
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "fifo/s_axis_aresetn"
+            ]
+          },
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "fifo/s_axis_aclk"
+            ]
+          }
+        }
+      },
+      "StreamingFCLayer_Batch_2": {
+        "interface_ports": {
+          "out_V_V": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V_V": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "StreamingFCLayer_Batch_2": {
+            "vlnv": "xilinx.com:hls:StreamingFCLayer_Batch_2:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_2_0"
+          },
+          "StreamingFCLayer_Batch_2_wstrm": {
+            "vlnv": "xilinx.com:user:memstream:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_2_wstrm_0",
+            "parameters": {
+              "MEM_DEPTH": {
+                "value": "18000"
+              },
+              "MEM_INIT": {
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/"
+              },
+              "MEM_WIDTH": {
+                "value": "80"
+              },
+              "NSTREAMS": {
+                "value": "1"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "STRM0_DEPTH": {
+                "value": "18000"
+              },
+              "STRM0_OFFSET": {
+                "value": "0"
+              },
+              "STRM0_WIDTH": {
+                "value": "80"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "StreamingFCLayer_Batch_2_wstrm_m_axis_0": {
+            "interface_ports": [
+              "StreamingFCLayer_Batch_2_wstrm/m_axis_0",
+              "StreamingFCLayer_Batch_2/weights_V_V"
+            ]
+          },
+          "in0_V_V_1": {
+            "interface_ports": [
+              "in0_V_V",
+              "StreamingFCLayer_Batch_2/in0_V_V"
+            ]
+          },
+          "StreamingFCLayer_Batch_2_out_V_V": {
+            "interface_ports": [
+              "out_V_V",
+              "StreamingFCLayer_Batch_2/out_V_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "StreamingFCLayer_Batch_2_wstrm/aresetn",
+              "StreamingFCLayer_Batch_2/ap_rst_n"
+            ]
+          },
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "StreamingFCLayer_Batch_2_wstrm/aclk",
+              "StreamingFCLayer_Batch_2/ap_clk"
+            ]
+          }
+        }
+      },
+      "StreamingDataWidthConverter_Batch_11": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_11:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_11_0"
+      },
+      "StreamingMaxPool_Batch_3": {
+        "vlnv": "xilinx.com:hls:StreamingMaxPool_Batch_3:1.0",
+        "xci_name": "finn_design_StreamingMaxPool_Batch_3_0"
+      },
+      "StreamingDataWidthConverter_Batch_12": {
+        "vlnv": "xilinx.com:hls:StreamingDataWidthConverter_Batch_12:1.0",
+        "xci_name": "finn_design_StreamingDataWidthConverter_Batch_12_0"
+      },
+      "Thresholding_Batch_3": {
+        "vlnv": "xilinx.com:hls:Thresholding_Batch_3:1.0",
+        "xci_name": "finn_design_Thresholding_Batch_3_0"
+      },
+      "StreamingFCLayer_Batch_3": {
+        "interface_ports": {
+          "out_V_V": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "in0_V_V": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ap_clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ap_rst_n": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "StreamingFCLayer_Batch_3": {
+            "vlnv": "xilinx.com:hls:StreamingFCLayer_Batch_3:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_3_0"
+          },
+          "StreamingFCLayer_Batch_3_wstrm": {
+            "vlnv": "xilinx.com:user:memstream:1.0",
+            "xci_name": "finn_design_StreamingFCLayer_Batch_3_wstrm_0",
+            "parameters": {
+              "MEM_DEPTH": {
+                "value": "200"
+              },
+              "MEM_INIT": {
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/"
+              },
+              "MEM_WIDTH": {
+                "value": "8"
+              },
+              "NSTREAMS": {
+                "value": "1"
+              },
+              "RAM_STYLE": {
+                "value": "auto"
+              },
+              "STRM0_DEPTH": {
+                "value": "200"
+              },
+              "STRM0_OFFSET": {
+                "value": "0"
+              },
+              "STRM0_WIDTH": {
+                "value": "8"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "StreamingFCLayer_Batch_3_wstrm_m_axis_0": {
+            "interface_ports": [
+              "StreamingFCLayer_Batch_3_wstrm/m_axis_0",
+              "StreamingFCLayer_Batch_3/weights_V_V"
+            ]
+          },
+          "in0_V_V_1": {
+            "interface_ports": [
+              "in0_V_V",
+              "StreamingFCLayer_Batch_3/in0_V_V"
+            ]
+          },
+          "StreamingFCLayer_Batch_3_out_V_V": {
+            "interface_ports": [
+              "out_V_V",
+              "StreamingFCLayer_Batch_3/out_V_V"
+            ]
+          }
+        },
+        "nets": {
+          "ap_rst_n_1": {
+            "ports": [
+              "ap_rst_n",
+              "StreamingFCLayer_Batch_3_wstrm/aresetn",
+              "StreamingFCLayer_Batch_3/ap_rst_n"
+            ]
+          },
+          "ap_clk_1": {
+            "ports": [
+              "ap_clk",
+              "StreamingFCLayer_Batch_3_wstrm/aclk",
+              "StreamingFCLayer_Batch_3/ap_clk"
+            ]
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "StreamingDataWidthConverter_Batch_3_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_3/out_V_V",
+          "StreamingMaxPool_Batch_1/in0_V_V"
+        ]
+      },
+      "StreamingMaxPool_Batch_1_out_V_V": {
+        "interface_ports": [
+          "StreamingMaxPool_Batch_1/out_V_V",
+          "StreamingDataWidthConverter_Batch_4/in0_V_V"
+        ]
+      },
+      "Thresholding_Batch_1_out_V_V": {
+        "interface_ports": [
+          "Thresholding_Batch_1/out_V_V",
+          "StreamingDataWidthConverter_Batch_5/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_7_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_7/out_V_V",
+          "StreamingMaxPool_Batch_2/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_9_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_9/out_V_V",
+          "ConvolutionInputGenerator1D_2/in0_V_V"
+        ]
+      },
+      "StreamingFCLayer_Batch_2_out_V_V": {
+        "interface_ports": [
+          "StreamingFCLayer_Batch_2/out_V_V",
+          "StreamingDataWidthConverter_Batch_11/in0_V_V"
+        ]
+      },
+      "Thresholding_Batch_2_out_V_V": {
+        "interface_ports": [
+          "Thresholding_Batch_2/out_V_V",
+          "StreamingDataWidthConverter_Batch_9/in0_V_V"
+        ]
+      },
+      "StreamingFIFO_22_out_V_V": {
+        "interface_ports": [
+          "StreamingFIFO_22/out_V_V",
+          "StreamingFCLayer_Batch_2/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_2_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_2/out_V_V",
+          "StreamingFIFO_6/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_12_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_12/out_V_V",
+          "Thresholding_Batch_3/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_1_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_1/out_V_V",
+          "ConvolutionInputGenerator1D_0/in0_V_V"
+        ]
+      },
+      "Thresholding_Batch_0_out_V_V": {
+        "interface_ports": [
+          "Thresholding_Batch_0/out_V_V",
+          "StreamingDataWidthConverter_Batch_1/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_4_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_4/out_V_V",
+          "Thresholding_Batch_1/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_5_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_5/out_V_V",
+          "ConvolutionInputGenerator1D_1/in0_V_V"
+        ]
+      },
+      "StreamingFIFO_0_out_V_V": {
+        "interface_ports": [
+          "StreamingFIFO_0/out_V_V",
+          "StreamingMaxPool_Batch_0/in0_V_V"
+        ]
+      },
+      "StreamingFCLayer_Batch_1_out_V_V": {
+        "interface_ports": [
+          "StreamingFCLayer_Batch_1/out_V_V",
+          "StreamingDataWidthConverter_Batch_7/in0_V_V"
+        ]
+      },
+      "ConvolutionInputGenerator1D_2_out_V_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator1D_2/out_V_V",
+          "StreamingDataWidthConverter_Batch_10/in0_V_V"
+        ]
+      },
+      "StreamingFCLayer_Batch_0_out_V_V": {
+        "interface_ports": [
+          "StreamingFCLayer_Batch_0/out_V_V",
+          "StreamingDataWidthConverter_Batch_3/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_10_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_10/out_V_V",
+          "StreamingFIFO_22/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_8_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_8/out_V_V",
+          "Thresholding_Batch_2/in0_V_V"
+        ]
+      },
+      "StreamingFIFO_6_out_V_V": {
+        "interface_ports": [
+          "StreamingFIFO_6/out_V_V",
+          "StreamingFCLayer_Batch_0/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_11_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_11/out_V_V",
+          "StreamingMaxPool_Batch_3/in0_V_V"
+        ]
+      },
+      "StreamingFCLayer_Batch_3_out_V_V": {
+        "interface_ports": [
+          "m_axis_0",
+          "StreamingFCLayer_Batch_3/out_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_6_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_6/out_V_V",
+          "StreamingFIFO_14/in0_V_V"
+        ]
+      },
+      "ConvolutionInputGenerator1D_0_out_V_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator1D_0/out_V_V",
+          "StreamingDataWidthConverter_Batch_2/in0_V_V"
+        ]
+      },
+      "StreamingMaxPool_Batch_2_out_V_V": {
+        "interface_ports": [
+          "StreamingMaxPool_Batch_2/out_V_V",
+          "StreamingDataWidthConverter_Batch_8/in0_V_V"
+        ]
+      },
+      "StreamingMaxPool_Batch_0_out_V_V": {
+        "interface_ports": [
+          "StreamingMaxPool_Batch_0/out_V_V",
+          "StreamingDataWidthConverter_Batch_0/in0_V_V"
+        ]
+      },
+      "Thresholding_Batch_3_out_V_V": {
+        "interface_ports": [
+          "Thresholding_Batch_3/out_V_V",
+          "StreamingFCLayer_Batch_3/in0_V_V"
+        ]
+      },
+      "StreamingDataWidthConverter_Batch_0_out_V_V": {
+        "interface_ports": [
+          "StreamingDataWidthConverter_Batch_0/out_V_V",
+          "Thresholding_Batch_0/in0_V_V"
+        ]
+      },
+      "StreamingMaxPool_Batch_3_out_V_V": {
+        "interface_ports": [
+          "StreamingMaxPool_Batch_3/out_V_V",
+          "StreamingDataWidthConverter_Batch_12/in0_V_V"
+        ]
+      },
+      "ConvolutionInputGenerator1D_1_out_V_V": {
+        "interface_ports": [
+          "ConvolutionInputGenerator1D_1/out_V_V",
+          "StreamingDataWidthConverter_Batch_6/in0_V_V"
+        ]
+      },
+      "in0_V_V_0_1": {
+        "interface_ports": [
+          "s_axis_0",
+          "StreamingFIFO_0/in0_V_V"
+        ]
+      },
+      "StreamingFIFO_14_out_V_V": {
+        "interface_ports": [
+          "StreamingFIFO_14/out_V_V",
+          "StreamingFCLayer_Batch_1/in0_V_V"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "StreamingFIFO_0/ap_clk",
+          "StreamingMaxPool_Batch_0/ap_clk",
+          "StreamingDataWidthConverter_Batch_0/ap_clk",
+          "Thresholding_Batch_0/ap_clk",
+          "StreamingDataWidthConverter_Batch_1/ap_clk",
+          "ConvolutionInputGenerator1D_0/ap_clk",
+          "StreamingDataWidthConverter_Batch_2/ap_clk",
+          "StreamingFIFO_6/ap_clk",
+          "StreamingFCLayer_Batch_0/ap_clk",
+          "StreamingDataWidthConverter_Batch_3/ap_clk",
+          "StreamingMaxPool_Batch_1/ap_clk",
+          "StreamingDataWidthConverter_Batch_4/ap_clk",
+          "Thresholding_Batch_1/ap_clk",
+          "StreamingDataWidthConverter_Batch_5/ap_clk",
+          "ConvolutionInputGenerator1D_1/ap_clk",
+          "StreamingDataWidthConverter_Batch_6/ap_clk",
+          "StreamingFIFO_14/ap_clk",
+          "StreamingFCLayer_Batch_1/ap_clk",
+          "StreamingDataWidthConverter_Batch_7/ap_clk",
+          "StreamingMaxPool_Batch_2/ap_clk",
+          "StreamingDataWidthConverter_Batch_8/ap_clk",
+          "Thresholding_Batch_2/ap_clk",
+          "StreamingDataWidthConverter_Batch_9/ap_clk",
+          "ConvolutionInputGenerator1D_2/ap_clk",
+          "StreamingDataWidthConverter_Batch_10/ap_clk",
+          "StreamingFIFO_22/ap_clk",
+          "StreamingFCLayer_Batch_2/ap_clk",
+          "StreamingDataWidthConverter_Batch_11/ap_clk",
+          "StreamingMaxPool_Batch_3/ap_clk",
+          "StreamingDataWidthConverter_Batch_12/ap_clk",
+          "Thresholding_Batch_3/ap_clk",
+          "StreamingFCLayer_Batch_3/ap_clk"
+        ]
+      },
+      "ap_rst_n_0_1": {
+        "ports": [
+          "ap_rst_n",
+          "StreamingFIFO_0/ap_rst_n",
+          "StreamingMaxPool_Batch_0/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_0/ap_rst_n",
+          "Thresholding_Batch_0/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_1/ap_rst_n",
+          "ConvolutionInputGenerator1D_0/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_2/ap_rst_n",
+          "StreamingFIFO_6/ap_rst_n",
+          "StreamingFCLayer_Batch_0/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_3/ap_rst_n",
+          "StreamingMaxPool_Batch_1/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_4/ap_rst_n",
+          "Thresholding_Batch_1/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_5/ap_rst_n",
+          "ConvolutionInputGenerator1D_1/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_6/ap_rst_n",
+          "StreamingFIFO_14/ap_rst_n",
+          "StreamingFCLayer_Batch_1/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_7/ap_rst_n",
+          "StreamingMaxPool_Batch_2/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_8/ap_rst_n",
+          "Thresholding_Batch_2/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_9/ap_rst_n",
+          "ConvolutionInputGenerator1D_2/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_10/ap_rst_n",
+          "StreamingFIFO_22/ap_rst_n",
+          "StreamingFCLayer_Batch_2/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_11/ap_rst_n",
+          "StreamingMaxPool_Batch_3/ap_rst_n",
+          "StreamingDataWidthConverter_Batch_12/ap_rst_n",
+          "Thresholding_Batch_3/ap_rst_n",
+          "StreamingFCLayer_Batch_3/ap_rst_n"
+        ]
+      }
+    }
+  }
+}

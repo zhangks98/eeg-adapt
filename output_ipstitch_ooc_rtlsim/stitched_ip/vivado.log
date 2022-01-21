@@ -1,0 +1,380 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 21 12:40:53 2022
+# Process ID: 11857
+# Current directory: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_
+# Command line: vivado -mode batch -source make_project.tcl
+# Log file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/vivado.log
+# Journal file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/vivado.jou
+#-----------------------------------------------------------
+source make_project.tcl
+# create_project finn_vivado_stitch_proj /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_ -part xc7z020clg400-1
+# set_property ip_repo_paths [list /workspace/finn/finn-rtllib/memstream /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_0_kch69k85/project_StreamingFIFO_0/sol1/impl/verilog /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_0_lonu2rww/project_StreamingMaxPool_Batch_0/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_qdwa4ko7/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_0_lw_llni_/project_Thresholding_Batch_0/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_1_jgvw9ded/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_ConvolutionInputGenerator1D_0_sfjkgfad/project_ConvolutionInputGenerator1D_0/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0kzp9ykt/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_6_ib_9ak86/project_StreamingFIFO_6/sol1/impl/verilog /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/project_StreamingFCLayer_Batch_0/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_3_wr_6zl70/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_1_miib0ac8/project_StreamingMaxPool_Batch_1/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_3_2awax5/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_1_sn3nf0x9/project_Thresholding_Batch_1/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_5_ph9o3c9p/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_ConvolutionInputGenerator1D_1_hky_wjc_/project_ConvolutionInputGenerator1D_1/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_6_169qz40m/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_14_2tx8ea19/project_StreamingFIFO_14/sol1/impl/verilog /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/project_StreamingFCLayer_Batch_1/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_7_tq16i032/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_2_p2aviz0t/project_StreamingMaxPool_Batch_2/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_8_f4mpsaar/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_2_dhg7_yuc/project_Thresholding_Batch_2/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_9_63_1jvpm/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_ConvolutionInputGenerator1D_2_zu977vu2/project_ConvolutionInputGenerator1D_2/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_10_x_8o546a/project_StreamingDataWidthConverter_Batch_10/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_22_57zlvxmb/project_StreamingFIFO_22/sol1/impl/verilog /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/project_StreamingFCLayer_Batch_2/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_11__h3j8goe/project_StreamingDataWidthConverter_Batch_11/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_3_ntu2mc8e/project_StreamingMaxPool_Batch_3/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_12_pv2vw_ru/project_StreamingDataWidthConverter_Batch_12/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_3_eesjc68q/project_Thresholding_Batch_3/sol1/impl/ip /tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/project_StreamingFCLayer_Batch_3/sol1/impl/ip] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/workspace/finn/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_0_kch69k85/project_StreamingFIFO_0/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_0_lonu2rww/project_StreamingMaxPool_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_0_qdwa4ko7/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_0_lw_llni_/project_Thresholding_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_1_jgvw9ded/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_ConvolutionInputGenerator1D_0_sfjkgfad/project_ConvolutionInputGenerator1D_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0kzp9ykt/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_6_ib_9ak86/project_StreamingFIFO_6/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/project_StreamingFCLayer_Batch_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_3_wr_6zl70/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_1_miib0ac8/project_StreamingMaxPool_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_4_3_2awax5/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_1_sn3nf0x9/project_Thresholding_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_5_ph9o3c9p/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_ConvolutionInputGenerator1D_1_hky_wjc_/project_ConvolutionInputGenerator1D_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_6_169qz40m/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_14_2tx8ea19/project_StreamingFIFO_14/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/project_StreamingFCLayer_Batch_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_7_tq16i032/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_2_p2aviz0t/project_StreamingMaxPool_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_8_f4mpsaar/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_2_dhg7_yuc/project_Thresholding_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_9_63_1jvpm/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_ConvolutionInputGenerator1D_2_zu977vu2/project_ConvolutionInputGenerator1D_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_10_x_8o546a/project_StreamingDataWidthConverter_Batch_10/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFIFO_22_57zlvxmb/project_StreamingFIFO_22/sol1/impl/verilog'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/project_StreamingFCLayer_Batch_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_11__h3j8goe/project_StreamingDataWidthConverter_Batch_11/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingMaxPool_Batch_3_ntu2mc8e/project_StreamingMaxPool_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingDataWidthConverter_Batch_12_pv2vw_ru/project_StreamingDataWidthConverter_Batch_12/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_Thresholding_Batch_3_eesjc68q/project_Thresholding_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/project_StreamingFCLayer_Batch_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+# create_bd_design "finn_design"
+Wrote  : </tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFIFO_0:1.0 StreamingFIFO_0
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingMaxPool_Batch_0:1.0 StreamingMaxPool_Batch_0
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_0:1.0 StreamingDataWidthConverter_Batch_0
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_0' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:Thresholding_Batch_0:1.0 Thresholding_Batch_0
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_1:1.0 StreamingDataWidthConverter_Batch_1
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_1' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_0:1.0 ConvolutionInputGenerator1D_0
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_0' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_2:1.0 StreamingDataWidthConverter_Batch_2
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_2' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFIFO_6:1.0 StreamingFIFO_6
+# create_bd_cell -type hier StreamingFCLayer_Batch_0
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_0/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_0/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_0/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_0/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_0:1.0 /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_0_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {250} CONFIG.MEM_WIDTH {360} CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {250} CONFIG.STRM0_WIDTH {360} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 20.0 is provided. The value is converted to long type(20)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 14.0 is provided. The value is converted to long type(14)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_clk] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_0/ap_clk] [get_bd_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_3:1.0 StreamingDataWidthConverter_Batch_3
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_3' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingMaxPool_Batch_1:1.0 StreamingMaxPool_Batch_1
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_4:1.0 StreamingDataWidthConverter_Batch_4
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_4' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:Thresholding_Batch_1:1.0 Thresholding_Batch_1
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_5:1.0 StreamingDataWidthConverter_Batch_5
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_5' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_1:1.0 ConvolutionInputGenerator1D_1
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_1' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_6:1.0 StreamingDataWidthConverter_Batch_6
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_6' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFIFO_14:1.0 StreamingFIFO_14
+# create_bd_cell -type hier StreamingFCLayer_Batch_1
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_1/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_1/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_1/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_1/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_1:1.0 /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_1_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {1125} CONFIG.MEM_WIDTH {320} CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {1125} CONFIG.STRM0_WIDTH {320} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 20.0 is provided. The value is converted to long type(20)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 17.0 is provided. The value is converted to long type(17)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_clk] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_1/ap_clk] [get_bd_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_7:1.0 StreamingDataWidthConverter_Batch_7
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_7' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingMaxPool_Batch_2:1.0 StreamingMaxPool_Batch_2
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_8:1.0 StreamingDataWidthConverter_Batch_8
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_8' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:Thresholding_Batch_2:1.0 Thresholding_Batch_2
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_9:1.0 StreamingDataWidthConverter_Batch_9
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_9' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:ConvolutionInputGenerator1D_2:1.0 ConvolutionInputGenerator1D_2
+WARNING: [BD 41-1753] The name 'ConvolutionInputGenerator1D_2' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_10:1.0 StreamingDataWidthConverter_Batch_10
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_10' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type hier StreamingFIFO_22
+# create_bd_pin -dir I -type clk /StreamingFIFO_22/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFIFO_22/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFIFO_22/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFIFO_22/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 /StreamingFIFO_22/fifo
+# set_property -dict [list CONFIG.FIFO_DEPTH {512}] [get_bd_cells /StreamingFIFO_22/fifo]
+# set_property -dict [list CONFIG.FIFO_MEMORY_TYPE {auto}] [get_bd_cells /StreamingFIFO_22/fifo]
+# set_property -dict [list CONFIG.TDATA_NUM_BYTES {10}] [get_bd_cells /StreamingFIFO_22/fifo]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_22/fifo/M_AXIS] [get_bd_intf_pins StreamingFIFO_22/out_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_22/fifo/S_AXIS] [get_bd_intf_pins StreamingFIFO_22/in0_V_V]
+# connect_bd_net [get_bd_pins StreamingFIFO_22/ap_rst_n] [get_bd_pins StreamingFIFO_22/fifo/s_axis_aresetn]
+# connect_bd_net [get_bd_pins StreamingFIFO_22/ap_clk] [get_bd_pins StreamingFIFO_22/fifo/s_axis_aclk]
+# create_bd_cell -type hier StreamingFCLayer_Batch_2
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_2/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_2/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_2/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_2/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_2:1.0 /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_2_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {18000} CONFIG.MEM_WIDTH {80} CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {18000} CONFIG.STRM0_WIDTH {80} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 18.0 is provided. The value is converted to long type(18)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 19.0 is provided. The value is converted to long type(19)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_clk] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_2/ap_clk] [get_bd_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_11:1.0 StreamingDataWidthConverter_Batch_11
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_11' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingMaxPool_Batch_3:1.0 StreamingMaxPool_Batch_3
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingDataWidthConverter_Batch_12:1.0 StreamingDataWidthConverter_Batch_12
+WARNING: [BD 41-1753] The name 'StreamingDataWidthConverter_Batch_12' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# create_bd_cell -type ip -vlnv xilinx.com:hls:Thresholding_Batch_3:1.0 Thresholding_Batch_3
+# create_bd_cell -type hier StreamingFCLayer_Batch_3
+# create_bd_pin -dir I -type clk /StreamingFCLayer_Batch_3/ap_clk
+# create_bd_pin -dir I -type rst /StreamingFCLayer_Batch_3/ap_rst_n
+# create_bd_intf_pin -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_3/out_V_V
+# create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 /StreamingFCLayer_Batch_3/in0_V_V
+# create_bd_cell -type ip -vlnv xilinx.com:hls:StreamingFCLayer_Batch_3:1.0 /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3
+# create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm
+WARNING: [BD 41-1753] The name 'StreamingFCLayer_Batch_3_wstrm' you have specified is long. The Windows OS has path length limitations. It is recommended you use shorter names(less than 25 characters) to reduce the likelihood of issues when/if running on windows OS.
+# set_property -dict [list CONFIG.NSTREAMS {1} CONFIG.MEM_DEPTH {200} CONFIG.MEM_WIDTH {8} CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/} CONFIG.RAM_STYLE {auto} CONFIG.STRM0_DEPTH {200} CONFIG.STRM0_WIDTH {8} CONFIG.STRM0_OFFSET {0} ] [get_bd_cells /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm]
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 16.0 is provided. The value is converted to long type(16)
+WARNING: [IP_Flow 19-4684] Expected long value for param AXILITE_ADDR_WIDTH but, float/scientific notation value 10.0 is provided. The value is converted to long type(10)
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/m_axis_0] [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/weights_V_V]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/aresetn]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_clk] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/aclk]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_pins StreamingFCLayer_Batch_3/ap_clk] [get_bd_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_3/in0_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/in0_V_V]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_3/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3/out_V_V]
+# save_bd_design
+Wrote  : </tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# make_bd_pins_external [get_bd_pins StreamingFIFO_0/ap_clk]
+# set_property name ap_clk [get_bd_ports ap_clk_0]
+# make_bd_pins_external [get_bd_pins StreamingFIFO_0/ap_rst_n]
+# set_property name ap_rst_n [get_bd_ports ap_rst_n_0]
+# make_bd_intf_pins_external [get_bd_intf_pins StreamingFIFO_0/in0_V_V]
+# set_property name s_axis_0 [get_bd_intf_ports in0_V_V_0]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingMaxPool_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingMaxPool_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_0/out_V_V] [get_bd_intf_pins StreamingMaxPool_Batch_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingMaxPool_Batch_0/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins Thresholding_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins Thresholding_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_0/out_V_V] [get_bd_intf_pins Thresholding_Batch_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins Thresholding_Batch_0/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_1/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_0/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFIFO_6/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFIFO_6/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_2/out_V_V] [get_bd_intf_pins StreamingFIFO_6/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_0/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_0/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_6/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_0/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_0/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_3/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingMaxPool_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingMaxPool_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_3/out_V_V] [get_bd_intf_pins StreamingMaxPool_Batch_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_4/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_4/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingMaxPool_Batch_1/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_4/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins Thresholding_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins Thresholding_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_4/out_V_V] [get_bd_intf_pins Thresholding_Batch_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_5/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_5/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins Thresholding_Batch_1/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_5/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_5/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_6/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_6/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_1/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_6/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFIFO_14/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFIFO_14/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_6/out_V_V] [get_bd_intf_pins StreamingFIFO_14/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_1/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_1/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_14/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_1/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_7/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_7/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_1/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_7/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingMaxPool_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingMaxPool_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_7/out_V_V] [get_bd_intf_pins StreamingMaxPool_Batch_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_8/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_8/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingMaxPool_Batch_2/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_8/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins Thresholding_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins Thresholding_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_8/out_V_V] [get_bd_intf_pins Thresholding_Batch_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_9/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_9/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins Thresholding_Batch_2/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_9/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins ConvolutionInputGenerator1D_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins ConvolutionInputGenerator1D_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_9/out_V_V] [get_bd_intf_pins ConvolutionInputGenerator1D_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_10/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_10/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins ConvolutionInputGenerator1D_2/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_10/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFIFO_22/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFIFO_22/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_10/out_V_V] [get_bd_intf_pins StreamingFIFO_22/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_2/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_2/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFIFO_22/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_2/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_11/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_11/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingFCLayer_Batch_2/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_11/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingMaxPool_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingMaxPool_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_11/out_V_V] [get_bd_intf_pins StreamingMaxPool_Batch_3/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingDataWidthConverter_Batch_12/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingDataWidthConverter_Batch_12/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingMaxPool_Batch_3/out_V_V] [get_bd_intf_pins StreamingDataWidthConverter_Batch_12/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins Thresholding_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins Thresholding_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins StreamingDataWidthConverter_Batch_12/out_V_V] [get_bd_intf_pins Thresholding_Batch_3/in0_V_V]
+# connect_bd_net [get_bd_ports ap_rst_n] [get_bd_pins StreamingFCLayer_Batch_3/ap_rst_n]
+# connect_bd_net [get_bd_ports ap_clk] [get_bd_pins StreamingFCLayer_Batch_3/ap_clk]
+# connect_bd_intf_net [get_bd_intf_pins Thresholding_Batch_3/out_V_V] [get_bd_intf_pins StreamingFCLayer_Batch_3/in0_V_V]
+# make_bd_intf_pins_external [get_bd_intf_pins StreamingFCLayer_Batch_3/out_V_V]
+# set_property name m_axis_0 [get_bd_intf_ports out_V_V_0]
+# set_property CONFIG.FREQ_HZ 100000000.000000 [get_bd_ports /ap_clk]
+# regenerate_bd_layout
+# validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /StreamingFIFO_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFIFO_6/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFIFO_14/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm/aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=finn_design_ap_clk_0 
+# save_bd_design
+Wrote  : </tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd> 
+# make_wrapper -files [get_files /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd] -top
+INFO: [BD 41-1662] The design 'finn_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/synth/finn_design.v
+VHDL Output written to : /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/sim/finn_design.v
+VHDL Output written to : /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+# add_files -norecurse /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+# ipx::package_project -root_dir /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/ip -vendor xilinx_finn -library finn -taxonomy /UserIP -module finn_design -import_files
+INFO: [BD 41-1662] The design 'finn_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/synth/finn_design.v
+VHDL Output written to : /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/sim/finn_design.v
+VHDL Output written to : /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFIFO_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingMaxPool_Batch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Thresholding_Batch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFIFO_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0_wstrm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingMaxPool_Batch_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Thresholding_Batch_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFIFO_14 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1_wstrm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingMaxPool_Batch_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Thresholding_Batch_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_9 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ConvolutionInputGenerator1D_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFIFO_22/fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2_wstrm .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_11 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingMaxPool_Batch_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingDataWidthConverter_Batch_12 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Thresholding_Batch_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3_wstrm .
+Exporting to file /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hw_handoff/finn_design.hwh
+Generated Block Design Tcl file /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hw_handoff/finn_design_bd.tcl
+Generated Hardware Definition File /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/synth/finn_design.hwdef
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 m_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 m_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 m_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 s_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 s_axis_0'
+CRITICAL WARNING: [IP_Flow 19-5234] Found an invalid attribute: 'Misformed interface info attr: xilinx.com:interface:axis:1.0 s_axis_0'
+WARNING: [IP_Flow 19-3157] Bus Interface 'RST.AP_RST_N': Bus parameter POLARITY is ACTIVE_LOW but port 'ap_rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'sim/finn_design.protoinst' found in file group 'Simulation'.
+Resolution: Remove the file from the specified file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::package_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1814.449 ; gain = 122.602 ; free physical = 2276 ; free virtual = 21233
+# set_property core_revision 2 [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# ipx::create_xgui_files [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# set_property value_resolve_type user [ipx::get_bus_parameters -of [ipx::get_bus_interfaces -of [ipx::current_core ]]]
+# ipx::update_checksums [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# ipx::save_core [ipx::find_open_core xilinx_finn:finn:finn_design:1.0]
+# set all_v_files [get_files -filter {FILE_TYPE == Verilog && USED_IN_SYNTHESIS == 1} ]
+# set fp [open /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/all_verilog_srcs.txt w]
+# foreach vf $all_v_files {puts $fp $vf}
+# close $fp
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 21 12:41:13 2022...
