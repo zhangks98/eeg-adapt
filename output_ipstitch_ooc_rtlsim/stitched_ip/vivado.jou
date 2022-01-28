@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jan 21 12:40:53 2022
-# Process ID: 11857
-# Current directory: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_
+# Start of session at: Wed Jan 26 15:06:19 2022
+# Process ID: 46262
+# Current directory: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_fo405gew
 # Command line: vivado -mode batch -source make_project.tcl
-# Log file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/vivado.log
-# Journal file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/vivado.jou
+# Log file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_fo405gew/vivado.log
+# Journal file: /tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_fo405gew/vivado.jou
 #-----------------------------------------------------------
 source make_project.tcl

@@ -323,7 +323,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dfc57208</spirit:value>
+            <spirit:value>e76b2ba0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -438,7 +438,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ce3397c9</spirit:value>
+            <spirit:value>d6d6ee0f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -801,7 +801,7 @@
       <spirit:file>
         <spirit:name>src/finn_design.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_1dfa76db</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_1b58f01c</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1722,7 +1722,7 @@
       <xilinx:displayName>finn_design_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-01-21T12:41:13Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2022-01-26T15:06:40Z</xilinx:coreCreationDateTime>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.AP_CLK.FREQ_HZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_0.HAS_TKEEP" xilinx:valueSource="constant_prop" xilinx:valuePermission="bd"/>
@@ -1748,7 +1748,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a5ec3bee"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="04f990c1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="319a46e5"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4c9cd019"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="c89a5ebc"/>
     </xilinx:packagingInfo>

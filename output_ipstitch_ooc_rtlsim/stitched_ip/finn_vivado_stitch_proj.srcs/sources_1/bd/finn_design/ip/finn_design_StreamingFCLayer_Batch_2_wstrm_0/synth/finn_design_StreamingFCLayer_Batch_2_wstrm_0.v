@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "memstream,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "finn_design_StreamingFCLayer_Batch_2_wstrm_0,memstream,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_StreamingFCLayer_Batch_2_wstrm_0,memstream,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=memstream,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONFIG_EN=true,NSTREAMS=1,MEM_DEPTH=18000,MEM_WIDTH=80,MEM_INIT=/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/,RAM_STYLE=auto,STRM0_WIDTH=80,STRM1_WIDTH=32,STRM2_WIDTH=32,STRM3_WIDTH=32,STRM4_WIDTH=32,STRM5_WIDTH=32,STRM0_DEPTH=18000,STRM1_DEP\
+(* CORE_GENERATION_INFO = "finn_design_StreamingFCLayer_Batch_2_wstrm_0,memstream,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=memstream,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONFIG_EN=true,NSTREAMS=1,MEM_DEPTH=18000,MEM_WIDTH=80,MEM_INIT=/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_8uay9h4c/,RAM_STYLE=auto,STRM0_WIDTH=80,STRM1_WIDTH=32,STRM2_WIDTH=32,STRM3_WIDTH=32,STRM4_WIDTH=32,STRM5_WIDTH=32,STRM0_DEPTH=18000,STRM1_DEP\
 TH=2304,STRM2_DEPTH=2304,STRM3_DEPTH=2304,STRM4_DEPTH=2304,STRM5_DEPTH=2304,STRM0_OFFSET=0,STRM1_OFFSET=2304,STRM2_OFFSET=4608,STRM3_OFFSET=6912,STRM4_OFFSET=9216,STRM5_OFFSET=11520,AXILITE_ADDR_WIDTH=19}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
@@ -142,7 +142,7 @@ output wire [79 : 0] m_axis_0_tdata;
     .NSTREAMS(1),
     .MEM_DEPTH(18000),
     .MEM_WIDTH(80),
-    .MEM_INIT("/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/"),
+    .MEM_INIT("/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_8uay9h4c/"),
     .RAM_STYLE("auto"),
     .STRM0_WIDTH(80),
     .STRM1_WIDTH(32),

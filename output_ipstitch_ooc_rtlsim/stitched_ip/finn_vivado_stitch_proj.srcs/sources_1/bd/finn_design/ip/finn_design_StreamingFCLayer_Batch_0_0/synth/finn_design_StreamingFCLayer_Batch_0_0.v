@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:StreamingFCLayer_Batch_0:1.0
-// IP Revision: 2112341911
+// IP Revision: 2112349256
 
 (* X_CORE_INFO = "StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "finn_design_StreamingFCLayer_Batch_0_0,StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_StreamingFCLayer_Batch_0_0,StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=StreamingFCLayer_Batch_0,x_ipVersion=1.0,x_ipCoreRevision=2112341911,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "finn_design_StreamingFCLayer_Batch_0_0,StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=StreamingFCLayer_Batch_0,x_ipVersion=1.0,x_ipCoreRevision=2112349256,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module finn_design_StreamingFCLayer_Batch_0_0 (

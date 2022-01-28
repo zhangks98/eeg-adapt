@@ -140,7 +140,7 @@ output wire [359 : 0] m_axis_0_tdata;
     .NSTREAMS(1),
     .MEM_DEPTH(250),
     .MEM_WIDTH(360),
-    .MEM_INIT("/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/"),
+    .MEM_INIT("/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_yrzn1xqf/"),
     .RAM_STYLE("auto"),
     .STRM0_WIDTH(360),
     .STRM1_WIDTH(32),
