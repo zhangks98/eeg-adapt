@@ -1,0 +1,107 @@
+{
+  "StreamingMaxPool_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "948",
+    "LUT": "1319",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "360",
+    "LUT": "1098",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator1D_0": {
+    "BRAM_18K": "0",
+    "FF": "4851",
+    "LUT": "1997",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "2434",
+    "LUT": "4570",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "1854",
+    "LUT": "2340",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "359",
+    "LUT": "1145",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator1D_1": {
+    "BRAM_18K": "0",
+    "FF": "9507",
+    "LUT": "1997",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_1": {
+    "BRAM_18K": "63",
+    "FF": "2890",
+    "LUT": "5026",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_2": {
+    "BRAM_18K": "0",
+    "FF": "3636",
+    "LUT": "4390",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_2": {
+    "BRAM_18K": "0",
+    "FF": "358",
+    "LUT": "1247",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator1D_2": {
+    "BRAM_18K": "0",
+    "FF": "18789",
+    "LUT": "1992",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_2": {
+    "BRAM_18K": "63",
+    "FF": "5589",
+    "LUT": "5337",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_3": {
+    "BRAM_18K": "0",
+    "FF": "6023",
+    "LUT": "5409",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_3": {
+    "BRAM_18K": "0",
+    "FF": "355",
+    "LUT": "1444",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_3": {
+    "BRAM_18K": "0",
+    "FF": "1412",
+    "LUT": "1649",
+    "DSP48E": "0",
+    "URAM": "0"
+  }
+}

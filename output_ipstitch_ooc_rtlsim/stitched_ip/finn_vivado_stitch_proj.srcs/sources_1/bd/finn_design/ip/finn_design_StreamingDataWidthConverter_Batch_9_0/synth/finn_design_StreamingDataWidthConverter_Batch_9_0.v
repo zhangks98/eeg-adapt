@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:StreamingDataWidthConverter_Batch_9:1.0
-// IP Revision: 2112341912
+// IP Revision: 2112349257
 
 (* X_CORE_INFO = "StreamingDataWidthConverter_Batch_9_StreamingDataWidthConverter_Batch_9,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "finn_design_StreamingDataWidthConverter_Batch_9_0,StreamingDataWidthConverter_Batch_9_StreamingDataWidthConverter_Batch_9,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_StreamingDataWidthConverter_Batch_9_0,StreamingDataWidthConverter_Batch_9_StreamingDataWidthConverter_Batch_9,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=StreamingDataWidthConverter_Batch_9,x_ipVersion=1.0,x_ipCoreRevision=2112341912,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "finn_design_StreamingDataWidthConverter_Batch_9_0,StreamingDataWidthConverter_Batch_9_StreamingDataWidthConverter_Batch_9,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=StreamingDataWidthConverter_Batch_9,x_ipVersion=1.0,x_ipCoreRevision=2112349257,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module finn_design_StreamingDataWidthConverter_Batch_9_0 (

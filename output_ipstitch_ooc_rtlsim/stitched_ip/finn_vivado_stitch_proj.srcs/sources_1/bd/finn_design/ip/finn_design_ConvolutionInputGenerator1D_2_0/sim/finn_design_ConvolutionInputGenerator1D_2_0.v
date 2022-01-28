@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:ConvolutionInputGenerator1D_2:1.0
-// IP Revision: 2112341896
+// IP Revision: 2112349241
 
 `timescale 1ns/1ps
 

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:StreamingDataWidthConverter_Batch_7:1.0
-// IP Revision: 2112341913
+// IP Revision: 2112349258
 
 `timescale 1ns/1ps
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan 21 12:41:13 2022" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 26 15:06:40 2022" VIVADOVERSION="2019.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="finn_design" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -160,7 +160,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="2112341899" FULLNAME="/ConvolutionInputGenerator1D_0" HWVERSION="1.0" INSTANCE="ConvolutionInputGenerator1D_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvolutionInputGenerator1D_0" VLNV="xilinx.com:hls:ConvolutionInputGenerator1D_0:1.0">
+    <MODULE COREREVISION="2112349243" FULLNAME="/ConvolutionInputGenerator1D_0" HWVERSION="1.0" INSTANCE="ConvolutionInputGenerator1D_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvolutionInputGenerator1D_0" VLNV="xilinx.com:hls:ConvolutionInputGenerator1D_0:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_ConvolutionInputGenerator1D_0_0"/>
@@ -256,7 +256,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341897" FULLNAME="/ConvolutionInputGenerator1D_1" HWVERSION="1.0" INSTANCE="ConvolutionInputGenerator1D_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvolutionInputGenerator1D_1" VLNV="xilinx.com:hls:ConvolutionInputGenerator1D_1:1.0">
+    <MODULE COREREVISION="2112349241" FULLNAME="/ConvolutionInputGenerator1D_1" HWVERSION="1.0" INSTANCE="ConvolutionInputGenerator1D_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvolutionInputGenerator1D_1" VLNV="xilinx.com:hls:ConvolutionInputGenerator1D_1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_ConvolutionInputGenerator1D_1_0"/>
@@ -352,7 +352,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341896" FULLNAME="/ConvolutionInputGenerator1D_2" HWVERSION="1.0" INSTANCE="ConvolutionInputGenerator1D_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvolutionInputGenerator1D_2" VLNV="xilinx.com:hls:ConvolutionInputGenerator1D_2:1.0">
+    <MODULE COREREVISION="2112349241" FULLNAME="/ConvolutionInputGenerator1D_2" HWVERSION="1.0" INSTANCE="ConvolutionInputGenerator1D_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ConvolutionInputGenerator1D_2" VLNV="xilinx.com:hls:ConvolutionInputGenerator1D_2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_ConvolutionInputGenerator1D_2_0"/>
@@ -448,7 +448,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341914" FULLNAME="/StreamingDataWidthConverter_Batch_0" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_0" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_0:1.0">
+    <MODULE COREREVISION="2112349260" FULLNAME="/StreamingDataWidthConverter_Batch_0" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_0" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_0:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_0_0"/>
@@ -544,7 +544,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341914" FULLNAME="/StreamingDataWidthConverter_Batch_1" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_1" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_1:1.0">
+    <MODULE COREREVISION="2112349259" FULLNAME="/StreamingDataWidthConverter_Batch_1" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_1" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_1_0"/>
@@ -640,7 +640,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341914" FULLNAME="/StreamingDataWidthConverter_Batch_10" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_10" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_10:1.0">
+    <MODULE COREREVISION="2112349259" FULLNAME="/StreamingDataWidthConverter_Batch_10" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_10" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_10:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_10_0"/>
@@ -736,7 +736,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341912" FULLNAME="/StreamingDataWidthConverter_Batch_11" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_11" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_11:1.0">
+    <MODULE COREREVISION="2112349257" FULLNAME="/StreamingDataWidthConverter_Batch_11" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_11" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_11:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_11_0"/>
@@ -832,7 +832,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341912" FULLNAME="/StreamingDataWidthConverter_Batch_12" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_12" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_12:1.0">
+    <MODULE COREREVISION="2112349256" FULLNAME="/StreamingDataWidthConverter_Batch_12" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_12" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_12:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_12_0"/>
@@ -928,7 +928,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341914" FULLNAME="/StreamingDataWidthConverter_Batch_2" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_2" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_2:1.0">
+    <MODULE COREREVISION="2112349259" FULLNAME="/StreamingDataWidthConverter_Batch_2" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_2" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_2_0"/>
@@ -1024,7 +1024,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341914" FULLNAME="/StreamingDataWidthConverter_Batch_3" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_3" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_3:1.0">
+    <MODULE COREREVISION="2112349259" FULLNAME="/StreamingDataWidthConverter_Batch_3" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_3" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_3:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_3_0"/>
@@ -1120,7 +1120,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341913" FULLNAME="/StreamingDataWidthConverter_Batch_4" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_4" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_4:1.0">
+    <MODULE COREREVISION="2112349259" FULLNAME="/StreamingDataWidthConverter_Batch_4" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_4" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_4:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_4_0"/>
@@ -1216,7 +1216,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341913" FULLNAME="/StreamingDataWidthConverter_Batch_5" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_5" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_5:1.0">
+    <MODULE COREREVISION="2112349258" FULLNAME="/StreamingDataWidthConverter_Batch_5" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_5" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_5:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_5_0"/>
@@ -1312,7 +1312,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341913" FULLNAME="/StreamingDataWidthConverter_Batch_6" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_6" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_6:1.0">
+    <MODULE COREREVISION="2112349258" FULLNAME="/StreamingDataWidthConverter_Batch_6" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_6" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_6:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_6_0"/>
@@ -1408,7 +1408,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341913" FULLNAME="/StreamingDataWidthConverter_Batch_7" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_7" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_7:1.0">
+    <MODULE COREREVISION="2112349258" FULLNAME="/StreamingDataWidthConverter_Batch_7" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_7" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_7:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_7_0"/>
@@ -1504,7 +1504,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341912" FULLNAME="/StreamingDataWidthConverter_Batch_8" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_8" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_8:1.0">
+    <MODULE COREREVISION="2112349257" FULLNAME="/StreamingDataWidthConverter_Batch_8" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_8" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_8:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_8_0"/>
@@ -1600,7 +1600,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341912" FULLNAME="/StreamingDataWidthConverter_Batch_9" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_9" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_9:1.0">
+    <MODULE COREREVISION="2112349257" FULLNAME="/StreamingDataWidthConverter_Batch_9" HWVERSION="1.0" INSTANCE="StreamingDataWidthConverter_Batch_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingDataWidthConverter_Batch_9" VLNV="xilinx.com:hls:StreamingDataWidthConverter_Batch_9:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingDataWidthConverter_Batch_9_0"/>
@@ -1696,7 +1696,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341911" FULLNAME="/StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_0" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_0:1.0">
+    <MODULE COREREVISION="2112349256" FULLNAME="/StreamingFCLayer_Batch_0/StreamingFCLayer_Batch_0" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_0_StreamingFCLayer_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_0" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_0:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingFCLayer_Batch_0_0"/>
@@ -1834,7 +1834,7 @@
         <PARAMETER NAME="NSTREAMS" VALUE="1"/>
         <PARAMETER NAME="MEM_DEPTH" VALUE="250"/>
         <PARAMETER NAME="MEM_WIDTH" VALUE="360"/>
-        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/"/>
+        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_yrzn1xqf/"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="STRM0_WIDTH" VALUE="360"/>
         <PARAMETER NAME="STRM1_WIDTH" VALUE="32"/>
@@ -1981,7 +1981,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341908" FULLNAME="/StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_1_StreamingFCLayer_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_1" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_1:1.0">
+    <MODULE COREREVISION="2112349253" FULLNAME="/StreamingFCLayer_Batch_1/StreamingFCLayer_Batch_1" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_1_StreamingFCLayer_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_1" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingFCLayer_Batch_1_0"/>
@@ -2119,7 +2119,7 @@
         <PARAMETER NAME="NSTREAMS" VALUE="1"/>
         <PARAMETER NAME="MEM_DEPTH" VALUE="1125"/>
         <PARAMETER NAME="MEM_WIDTH" VALUE="320"/>
-        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/"/>
+        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_5eper8a6/"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="STRM0_WIDTH" VALUE="320"/>
         <PARAMETER NAME="STRM1_WIDTH" VALUE="32"/>
@@ -2266,7 +2266,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341899" FULLNAME="/StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_2" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_2:1.0">
+    <MODULE COREREVISION="2112349244" FULLNAME="/StreamingFCLayer_Batch_2/StreamingFCLayer_Batch_2" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_2_StreamingFCLayer_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_2" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingFCLayer_Batch_2_0"/>
@@ -2404,7 +2404,7 @@
         <PARAMETER NAME="NSTREAMS" VALUE="1"/>
         <PARAMETER NAME="MEM_DEPTH" VALUE="18000"/>
         <PARAMETER NAME="MEM_WIDTH" VALUE="80"/>
-        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/"/>
+        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_8uay9h4c/"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="STRM0_WIDTH" VALUE="80"/>
         <PARAMETER NAME="STRM1_WIDTH" VALUE="32"/>
@@ -2551,7 +2551,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341892" FULLNAME="/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_3" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_3:1.0">
+    <MODULE COREREVISION="2112349237" FULLNAME="/StreamingFCLayer_Batch_3/StreamingFCLayer_Batch_3" HWVERSION="1.0" INSTANCE="StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingFCLayer_Batch_3" VLNV="xilinx.com:hls:StreamingFCLayer_Batch_3:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingFCLayer_Batch_3_0"/>
@@ -2689,7 +2689,7 @@
         <PARAMETER NAME="NSTREAMS" VALUE="1"/>
         <PARAMETER NAME="MEM_DEPTH" VALUE="200"/>
         <PARAMETER NAME="MEM_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/"/>
+        <PARAMETER NAME="MEM_INIT" VALUE="/tmp/finn_dev_floodd1 ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_cpz_29h1/"/>
         <PARAMETER NAME="RAM_STYLE" VALUE="auto"/>
         <PARAMETER NAME="STRM0_WIDTH" VALUE="8"/>
         <PARAMETER NAME="STRM1_WIDTH" VALUE="32"/>
@@ -3245,7 +3245,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341900" FULLNAME="/StreamingMaxPool_Batch_0" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_0" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_0:1.0">
+    <MODULE COREREVISION="2112349244" FULLNAME="/StreamingMaxPool_Batch_0" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_0" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_0:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingMaxPool_Batch_0_0"/>
@@ -3341,7 +3341,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341898" FULLNAME="/StreamingMaxPool_Batch_1" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_1" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_1:1.0">
+    <MODULE COREREVISION="2112349242" FULLNAME="/StreamingMaxPool_Batch_1" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_1" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingMaxPool_Batch_1_0"/>
@@ -3437,7 +3437,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341896" FULLNAME="/StreamingMaxPool_Batch_2" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_2" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_2:1.0">
+    <MODULE COREREVISION="2112349240" FULLNAME="/StreamingMaxPool_Batch_2" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_2" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingMaxPool_Batch_2_0"/>
@@ -3533,7 +3533,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341892" FULLNAME="/StreamingMaxPool_Batch_3" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_3" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_3:1.0">
+    <MODULE COREREVISION="2112349237" FULLNAME="/StreamingMaxPool_Batch_3" HWVERSION="1.0" INSTANCE="StreamingMaxPool_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamingMaxPool_Batch_3" VLNV="xilinx.com:hls:StreamingMaxPool_Batch_3:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_StreamingMaxPool_Batch_3_0"/>
@@ -3629,7 +3629,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341900" FULLNAME="/Thresholding_Batch_0" HWVERSION="1.0" INSTANCE="Thresholding_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_0" VLNV="xilinx.com:hls:Thresholding_Batch_0:1.0">
+    <MODULE COREREVISION="2112349244" FULLNAME="/Thresholding_Batch_0" HWVERSION="1.0" INSTANCE="Thresholding_Batch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_0" VLNV="xilinx.com:hls:Thresholding_Batch_0:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_Thresholding_Batch_0_0"/>
@@ -3725,7 +3725,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341898" FULLNAME="/Thresholding_Batch_1" HWVERSION="1.0" INSTANCE="Thresholding_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_1" VLNV="xilinx.com:hls:Thresholding_Batch_1:1.0">
+    <MODULE COREREVISION="2112349243" FULLNAME="/Thresholding_Batch_1" HWVERSION="1.0" INSTANCE="Thresholding_Batch_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_1" VLNV="xilinx.com:hls:Thresholding_Batch_1:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_Thresholding_Batch_1_0"/>
@@ -3821,7 +3821,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341895" FULLNAME="/Thresholding_Batch_2" HWVERSION="1.0" INSTANCE="Thresholding_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_2" VLNV="xilinx.com:hls:Thresholding_Batch_2:1.0">
+    <MODULE COREREVISION="2112349239" FULLNAME="/Thresholding_Batch_2" HWVERSION="1.0" INSTANCE="Thresholding_Batch_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_2" VLNV="xilinx.com:hls:Thresholding_Batch_2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_Thresholding_Batch_2_0"/>
@@ -3917,7 +3917,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2112341897" FULLNAME="/Thresholding_Batch_3" HWVERSION="1.0" INSTANCE="Thresholding_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_3" VLNV="xilinx.com:hls:Thresholding_Batch_3:1.0">
+    <MODULE COREREVISION="2112349241" FULLNAME="/Thresholding_Batch_3" HWVERSION="1.0" INSTANCE="Thresholding_Batch_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Thresholding_Batch_3" VLNV="xilinx.com:hls:Thresholding_Batch_3:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="finn_design_Thresholding_Batch_3_0"/>

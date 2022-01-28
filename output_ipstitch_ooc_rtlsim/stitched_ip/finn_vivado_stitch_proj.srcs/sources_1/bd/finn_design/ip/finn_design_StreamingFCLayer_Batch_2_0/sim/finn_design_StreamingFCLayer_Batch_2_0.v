@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:StreamingFCLayer_Batch_2:1.0
-// IP Revision: 2112341899
+// IP Revision: 2112349244
 
 `timescale 1ns/1ps
 

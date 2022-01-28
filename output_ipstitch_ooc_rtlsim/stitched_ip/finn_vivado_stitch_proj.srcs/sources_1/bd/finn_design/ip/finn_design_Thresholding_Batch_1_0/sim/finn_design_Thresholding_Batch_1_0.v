@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:Thresholding_Batch_1:1.0
-// IP Revision: 2112341898
+// IP Revision: 2112349243
 
 `timescale 1ns/1ps
 

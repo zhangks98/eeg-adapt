@@ -236,7 +236,7 @@ proc create_hier_cell_StreamingFCLayer_Batch_3 { parentCell nameHier } {
   set StreamingFCLayer_Batch_3_wstrm [ create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 StreamingFCLayer_Batch_3_wstrm ]
   set_property -dict [ list \
    CONFIG.MEM_DEPTH {200} \
-   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/} \
+   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_cpz_29h1/} \
    CONFIG.MEM_WIDTH {8} \
    CONFIG.NSTREAMS {1} \
    CONFIG.RAM_STYLE {auto} \
@@ -309,7 +309,7 @@ proc create_hier_cell_StreamingFCLayer_Batch_2 { parentCell nameHier } {
   set StreamingFCLayer_Batch_2_wstrm [ create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 StreamingFCLayer_Batch_2_wstrm ]
   set_property -dict [ list \
    CONFIG.MEM_DEPTH {18000} \
-   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/} \
+   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_8uay9h4c/} \
    CONFIG.MEM_WIDTH {80} \
    CONFIG.NSTREAMS {1} \
    CONFIG.RAM_STYLE {auto} \
@@ -382,7 +382,7 @@ proc create_hier_cell_StreamingFCLayer_Batch_1 { parentCell nameHier } {
   set StreamingFCLayer_Batch_1_wstrm [ create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 StreamingFCLayer_Batch_1_wstrm ]
   set_property -dict [ list \
    CONFIG.MEM_DEPTH {1125} \
-   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/} \
+   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_5eper8a6/} \
    CONFIG.MEM_WIDTH {320} \
    CONFIG.NSTREAMS {1} \
    CONFIG.RAM_STYLE {auto} \
@@ -455,7 +455,7 @@ proc create_hier_cell_StreamingFCLayer_Batch_0 { parentCell nameHier } {
   set StreamingFCLayer_Batch_0_wstrm [ create_bd_cell -type ip -vlnv xilinx.com:user:memstream:1.0 StreamingFCLayer_Batch_0_wstrm ]
   set_property -dict [ list \
    CONFIG.MEM_DEPTH {250} \
-   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/} \
+   CONFIG.MEM_INIT {/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_yrzn1xqf/} \
    CONFIG.MEM_WIDTH {360} \
    CONFIG.NSTREAMS {1} \
    CONFIG.RAM_STYLE {auto} \

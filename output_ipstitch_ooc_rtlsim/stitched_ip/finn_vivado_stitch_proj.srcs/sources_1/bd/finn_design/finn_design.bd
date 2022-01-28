@@ -275,7 +275,7 @@
                 "value": "250"
               },
               "MEM_INIT": {
-                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/"
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_0_yrzn1xqf/"
               },
               "MEM_WIDTH": {
                 "value": "360"
@@ -401,7 +401,7 @@
                 "value": "1125"
               },
               "MEM_INIT": {
-                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/"
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_1_5eper8a6/"
               },
               "MEM_WIDTH": {
                 "value": "320"
@@ -425,6 +425,12 @@
           }
         },
         "interface_nets": {
+          "StreamingFCLayer_Batch_1_wstrm_m_axis_0": {
+            "interface_ports": [
+              "StreamingFCLayer_Batch_1_wstrm/m_axis_0",
+              "StreamingFCLayer_Batch_1/weights_V_V"
+            ]
+          },
           "in0_V_V_1": {
             "interface_ports": [
               "in0_V_V",
@@ -435,12 +441,6 @@
             "interface_ports": [
               "out_V_V",
               "StreamingFCLayer_Batch_1/out_V_V"
-            ]
-          },
-          "StreamingFCLayer_Batch_1_wstrm_m_axis_0": {
-            "interface_ports": [
-              "StreamingFCLayer_Batch_1_wstrm/m_axis_0",
-              "StreamingFCLayer_Batch_1/weights_V_V"
             ]
           }
         },
@@ -590,7 +590,7 @@
                 "value": "18000"
               },
               "MEM_INIT": {
-                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/"
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_2_8uay9h4c/"
               },
               "MEM_WIDTH": {
                 "value": "80"
@@ -700,7 +700,7 @@
                 "value": "200"
               },
               "MEM_INIT": {
-                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/"
+                "value": "/tmp/finn_dev_floodd1@ad.mee.tcd.ie/code_gen_ipgen_StreamingFCLayer_Batch_3_cpz_29h1/"
               },
               "MEM_WIDTH": {
                 "value": "8"

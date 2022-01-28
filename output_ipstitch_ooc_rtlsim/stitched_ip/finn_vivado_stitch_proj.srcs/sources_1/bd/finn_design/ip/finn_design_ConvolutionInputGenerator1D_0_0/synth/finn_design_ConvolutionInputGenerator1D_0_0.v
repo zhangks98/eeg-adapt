@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:ConvolutionInputGenerator1D_0:1.0
-// IP Revision: 2112341899
+// IP Revision: 2112349243
 
 (* X_CORE_INFO = "ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "finn_design_ConvolutionInputGenerator1D_0_0,ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_ConvolutionInputGenerator1D_0_0,ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=ConvolutionInputGenerator1D_0,x_ipVersion=1.0,x_ipCoreRevision=2112341899,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "finn_design_ConvolutionInputGenerator1D_0_0,ConvolutionInputGenerator1D_0_ConvolutionInputGenerator1D_0,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=ConvolutionInputGenerator1D_0,x_ipVersion=1.0,x_ipCoreRevision=2112349243,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module finn_design_ConvolutionInputGenerator1D_0_0 (

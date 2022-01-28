@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="finn_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1642768873"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1642768873"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1642768873"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1642768873"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1643209600"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1643209600"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1643209600"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1643209600"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/finn_design_StreamingFIFO_0_0/finn_design_StreamingFIFO_0_0.xci" Type="IP">
         <Instance HierarchyPath="StreamingFIFO_0"/>

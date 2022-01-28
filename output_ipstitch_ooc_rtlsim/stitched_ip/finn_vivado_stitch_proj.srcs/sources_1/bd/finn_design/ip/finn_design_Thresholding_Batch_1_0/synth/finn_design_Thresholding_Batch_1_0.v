@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:Thresholding_Batch_1:1.0
-// IP Revision: 2112341898
+// IP Revision: 2112349243
 
 (* X_CORE_INFO = "Thresholding_Batch_1_Thresholding_Batch_1,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "finn_design_Thresholding_Batch_1_0,Thresholding_Batch_1_Thresholding_Batch_1,{}" *)
-(* CORE_GENERATION_INFO = "finn_design_Thresholding_Batch_1_0,Thresholding_Batch_1_Thresholding_Batch_1,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Thresholding_Batch_1,x_ipVersion=1.0,x_ipCoreRevision=2112341898,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "finn_design_Thresholding_Batch_1_0,Thresholding_Batch_1_Thresholding_Batch_1,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Thresholding_Batch_1,x_ipVersion=1.0,x_ipCoreRevision=2112349243,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module finn_design_Thresholding_Batch_1_0 (

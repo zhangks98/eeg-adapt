@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Fri Jan 21 12:41:08 2022
+//Date        : Wed Jan 26 15:06:35 2022
 //Host        : finn_dev_floodd1@ad.mee.tcd.ie running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target finn_design_wrapper.bd
 //Design      : finn_design_wrapper

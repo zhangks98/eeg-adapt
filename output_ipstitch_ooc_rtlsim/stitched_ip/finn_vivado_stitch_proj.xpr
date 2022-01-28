@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="/tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_sa_1wur_/finn_vivado_stitch_proj.xpr">
+<Project Version="7" Minor="40" Path="/tmp/finn_dev_floodd1@ad.mee.tcd.ie/vivado_stitch_proj_fo405gew/finn_vivado_stitch_proj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="cd3af28164884eb1a175fd7c1379b234"/>
+    <Option Name="Id" Val="1295f7daf00843cfbca5ee9cb35a97b3"/>
     <Option Name="Part" Val="xc7z020clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -22,38 +22,38 @@
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../workspace/finn/finn-rtllib/memstream"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_0_kch69k85/project_StreamingFIFO_0/sol1/impl/verilog"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_0_lonu2rww/project_StreamingMaxPool_Batch_0/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_0_qdwa4ko7/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_0_lw_llni_/project_Thresholding_Batch_0/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_1_jgvw9ded/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_ConvolutionInputGenerator1D_0_sfjkgfad/project_ConvolutionInputGenerator1D_0/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_2_0kzp9ykt/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_6_ib_9ak86/project_StreamingFIFO_6/sol1/impl/verilog"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_0_nm1evqa3/project_StreamingFCLayer_Batch_0/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_3_wr_6zl70/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_1_miib0ac8/project_StreamingMaxPool_Batch_1/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_4_3_2awax5/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_1_sn3nf0x9/project_Thresholding_Batch_1/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_5_ph9o3c9p/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_ConvolutionInputGenerator1D_1_hky_wjc_/project_ConvolutionInputGenerator1D_1/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_6_169qz40m/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_14_2tx8ea19/project_StreamingFIFO_14/sol1/impl/verilog"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_1_ey_wc87u/project_StreamingFCLayer_Batch_1/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_7_tq16i032/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_2_p2aviz0t/project_StreamingMaxPool_Batch_2/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_8_f4mpsaar/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_2_dhg7_yuc/project_Thresholding_Batch_2/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_9_63_1jvpm/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_ConvolutionInputGenerator1D_2_zu977vu2/project_ConvolutionInputGenerator1D_2/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_10_x_8o546a/project_StreamingDataWidthConverter_Batch_10/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_22_57zlvxmb/project_StreamingFIFO_22/sol1/impl/verilog"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_2_iaqji5ia/project_StreamingFCLayer_Batch_2/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_11__h3j8goe/project_StreamingDataWidthConverter_Batch_11/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_3_ntu2mc8e/project_StreamingMaxPool_Batch_3/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_12_pv2vw_ru/project_StreamingDataWidthConverter_Batch_12/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_3_eesjc68q/project_Thresholding_Batch_3/sol1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_3_ew1h8sel/project_StreamingFCLayer_Batch_3/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_0_etb_h6na/project_StreamingFIFO_0/sol1/impl/verilog"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_0_zt2layng/project_StreamingMaxPool_Batch_0/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_0_fs6e4z6a/project_StreamingDataWidthConverter_Batch_0/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_0_m47zln3f/project_Thresholding_Batch_0/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_1_7ug9qxm0/project_StreamingDataWidthConverter_Batch_1/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_ConvolutionInputGenerator1D_0_j0lwo5f5/project_ConvolutionInputGenerator1D_0/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_2_k_n3m5zw/project_StreamingDataWidthConverter_Batch_2/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_6_i0te771b/project_StreamingFIFO_6/sol1/impl/verilog"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_0_yrzn1xqf/project_StreamingFCLayer_Batch_0/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_3_rmxxkptg/project_StreamingDataWidthConverter_Batch_3/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_1_iiaoegjl/project_StreamingMaxPool_Batch_1/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_4_0x6t91uo/project_StreamingDataWidthConverter_Batch_4/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_1_kaswly0p/project_Thresholding_Batch_1/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_5_ry9ratzg/project_StreamingDataWidthConverter_Batch_5/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_ConvolutionInputGenerator1D_1_oq9bjekx/project_ConvolutionInputGenerator1D_1/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_6_yhbuau41/project_StreamingDataWidthConverter_Batch_6/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_14_2l9ye0ck/project_StreamingFIFO_14/sol1/impl/verilog"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_1_5eper8a6/project_StreamingFCLayer_Batch_1/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_7_202b_wh2/project_StreamingDataWidthConverter_Batch_7/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_2_ase7piio/project_StreamingMaxPool_Batch_2/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_8_7xwox9_h/project_StreamingDataWidthConverter_Batch_8/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_2_uofv4zz0/project_Thresholding_Batch_2/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_9_au0fj3q3/project_StreamingDataWidthConverter_Batch_9/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_ConvolutionInputGenerator1D_2_05ze2gpp/project_ConvolutionInputGenerator1D_2/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_10_dn5m6kvz/project_StreamingDataWidthConverter_Batch_10/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFIFO_22_cc12jazb/project_StreamingFIFO_22/sol1/impl/verilog"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_2_8uay9h4c/project_StreamingFCLayer_Batch_2/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_11_gvp___yw/project_StreamingDataWidthConverter_Batch_11/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingMaxPool_Batch_3_ave51hf7/project_StreamingMaxPool_Batch_3/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingDataWidthConverter_Batch_12_8i0q1vn4/project_StreamingDataWidthConverter_Batch_12/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_Thresholding_Batch_3_4b2gfw9o/project_Thresholding_Batch_3/sol1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../code_gen_ipgen_StreamingFCLayer_Batch_3_cpz_29h1/project_StreamingFCLayer_Batch_3/sol1/impl/ip"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
