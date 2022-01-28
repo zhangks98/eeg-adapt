@@ -85,7 +85,11 @@ class QuantDeep4Net(BaseModel):
         first_pool_class = pool_class_dict[self.first_pool_mode]
         later_pool_class = pool_class_dict[self.later_pool_mode]
         model = nn.Sequential()
+<<<<<<< HEAD
         model.add_module("quantizer", qnn.QuantHardTanh(act_quant=InputQuantizer))
+=======
+        #model.add_module("quantizer", qnn.QuantHardTanh(act_quant=InputQuantizer))
+>>>>>>> 11cae89ec18f440d819f676493976328090a6b9a
         if self.split_first_layer:
             model.add_module("dimshuffle", Expression(_transpose_time_to_spat))
             model.add_module(
@@ -95,9 +99,9 @@ class QuantDeep4Net(BaseModel):
                     self.n_filters_time,
                     (self.filter_time_length, 1),
                     stride=1,
-                    weight_bit_width=8,
+                    weight_bit_width=6,
                     #bias_quant=BiasQuant,
-                    #return_quant_tensor=True,
+                    return_quant_tensor=True,
                 ),
             )
             model.add_module(
@@ -108,7 +112,7 @@ class QuantDeep4Net(BaseModel):
                     (1, self.in_chans),
                     stride=(conv_stride, 1),
                     bias=not self.batch_norm,
-                    weight_bit_width=8,
+                    weight_bit_width=6,
                     #bias_quant=BiasQuant,
                 ),
             )
@@ -122,7 +126,7 @@ class QuantDeep4Net(BaseModel):
                     (self.filter_time_length, 1),
                     stride=(conv_stride, 1),
                     bias=not self.batch_norm,
-                    weight_bit_width=8,
+                    weight_bit_width=6,
                     #bias_quant=BiasQuant,
                 ),
             )
@@ -137,14 +141,14 @@ class QuantDeep4Net(BaseModel):
                     eps=1e-5,
                 ),
             )
-        model.add_module("conv_nonlin", qnn.QuantReLU(bit_width=8))#Expression(self.first_nonlin))
+        model.add_module("conv_nonlin", qnn.QuantReLU(bit_width=6))#Expression(self.first_nonlin))
         model.add_module(
             "pool",
             first_pool_class(
                 kernel_size=(self.pool_time_length, 1), stride=(pool_stride, 1)
             ),
         )
-        model.add_module("pool_nonlin", qnn.QuantIdentity(bit_width=8))#Expression(self.first_pool_nonlin))
+        model.add_module("pool_nonlin", qnn.QuantIdentity(bit_width=6))#Expression(self.first_pool_nonlin))
 
         def add_conv_pool_block(
             model, n_filters_before, n_filters, filter_length, block_nr, last
@@ -159,7 +163,7 @@ class QuantDeep4Net(BaseModel):
                     (filter_length, 1),
                     stride=(conv_stride, 1),
                     bias=not self.batch_norm,
-                    weight_bit_width=8,
+                    weight_bit_width=6,
                     #bias_quant=BiasQuant,
                 ),
             )
@@ -173,7 +177,7 @@ class QuantDeep4Net(BaseModel):
                         eps=1e-5,
                     ),
                 )
-            model.add_module("nonlin" + suffix, qnn.QuantReLU(bit_width=8))
+            model.add_module("nonlin" + suffix, qnn.QuantReLU(bit_width=6))
 
                 
             if not last:
@@ -185,7 +189,7 @@ class QuantDeep4Net(BaseModel):
                     ),
                 )
                 model.add_module(
-                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8)
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=6)
                 )
             else:
                 model.add_module(
@@ -196,7 +200,7 @@ class QuantDeep4Net(BaseModel):
                     ),
                 )
                 model.add_module(
-                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=8, return_quant_tensor=True)
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=6, return_quant_tensor=True)
                 )
 
 
@@ -230,7 +234,7 @@ class QuantDeep4Net(BaseModel):
                 self.n_classes,
                 (self.final_conv_length, 1),
                 bias=True,
-                weight_bit_width=8,
+                weight_bit_width=6,
                 bias_quant=BiasQuant,
             ),
         )

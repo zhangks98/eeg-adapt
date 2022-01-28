@@ -1,0 +1,107 @@
+{
+  "StreamingMaxPool_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "1240",
+    "LUT": "1418",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "1869",
+    "LUT": "3768",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator1D_0": {
+    "BRAM_18K": "0",
+    "FF": "6399",
+    "LUT": "1978",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "29046",
+    "LUT": "47751",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "2438",
+    "LUT": "2542",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "1856",
+    "LUT": "4066",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator1D_1": {
+    "BRAM_18K": "0",
+    "FF": "12597",
+    "LUT": "1978",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_1": {
+    "BRAM_18K": "0",
+    "FF": "26036",
+    "LUT": "43543",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_2": {
+    "BRAM_18K": "0",
+    "FF": "4836",
+    "LUT": "4792",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_2": {
+    "BRAM_18K": "0",
+    "FF": "1855",
+    "LUT": "4652",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "ConvolutionInputGenerator1D_2": {
+    "BRAM_18K": "0",
+    "FF": "24995",
+    "LUT": "1974",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_2": {
+    "BRAM_18K": "255",
+    "FF": "8627",
+    "LUT": "9758",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingMaxPool_Batch_3": {
+    "BRAM_18K": "0",
+    "FF": "8023",
+    "LUT": "5811",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "Thresholding_Batch_3": {
+    "BRAM_18K": "0",
+    "FF": "1864",
+    "LUT": "5847",
+    "DSP48E": "0",
+    "URAM": "0"
+  },
+  "StreamingFCLayer_Batch_3": {
+    "BRAM_18K": "0",
+    "FF": "1816",
+    "LUT": "1665",
+    "DSP48E": "0",
+    "URAM": "0"
+  }
+}
