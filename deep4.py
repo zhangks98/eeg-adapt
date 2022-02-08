@@ -2,20 +2,11 @@ import numpy as np
 from torch import nn
 from torch.nn import init
 from torch.nn.functional import elu
-from torch.nn import ReLU, Identity
 
-from base import BaseModel
-
+from braindecode.models.base import BaseModel
 from braindecode.torch_ext.modules import Expression, AvgPool2dWithConv
 from braindecode.torch_ext.functions import identity
 from braindecode.torch_ext.util import np_to_var
-
-from torch_modules import PrintLayer
-
-def _distribute_probability_(x):
-    #x[:,1] = 1 - x[:,0]
-    print(x)
-    return x
 
 class Deep4Net(BaseModel):
     """
@@ -39,21 +30,21 @@ class Deep4Net(BaseModel):
         final_conv_length,
         n_filters_time=25,
         n_filters_spat=25,
-        filter_time_length=10,
-        pool_time_length=3,
-        pool_time_stride=3,
+        filter_time_length=9,
+        pool_time_length=4,
+        pool_time_stride=4,
         n_filters_2=50,
-        filter_length_2=10,
+        filter_length_2=9,
         n_filters_3=100,
-        filter_length_3=10,
+        filter_length_3=9,
         n_filters_4=200,
-        filter_length_4=10,
-        first_nonlin=ReLU,
+        filter_length_4=9,
+        first_nonlin=elu,
         first_pool_mode="max",
-        first_pool_nonlin=Identity,
-        later_nonlin=ReLU,
+        first_pool_nonlin=identity,
+        later_nonlin=elu,
         later_pool_mode="max",
-        later_pool_nonlin=Identity,
+        later_pool_nonlin=identity,
         drop_prob=0.5,
         double_time_convs=False,
         split_first_layer=True,
@@ -132,7 +123,7 @@ class Deep4Net(BaseModel):
         model.add_module("pool_nonlin", nn.Identity())#Expression(self.first_pool_nonlin))
 
         def add_conv_pool_block(
-            model, n_filters_before, n_filters, filter_length, block_nr
+            model, n_filters_before, n_filters, filter_length, block_nr, last
         ):
             suffix = "_{:d}".format(block_nr)
             model.add_module("drop" + suffix, nn.Dropout(p=self.drop_prob))
@@ -158,25 +149,37 @@ class Deep4Net(BaseModel):
                 )
             model.add_module("nonlin" + suffix, nn.ReLU())#Expression(self.later_nonlin))
 
-            model.add_module(
-                "pool" + suffix,
-                later_pool_class(
-                    kernel_size=(self.pool_time_length, 1),
-                    stride=(pool_stride, 1),
-                ),
-            )
-            model.add_module(
-                "pool_nonlin" + suffix, nn.Identity()#Expression(self.later_pool_nonlin)
-            )
+            if not last:
+                model.add_module(
+                    "pool" + suffix,
+                    later_pool_class(
+                        kernel_size=(self.pool_time_length, 1),
+                        stride=(pool_stride, 1),
+                    ),
+                )
+                model.add_module(
+                    "pool_nonlin" + suffix, nn.Identity()#Expression(self.later_pool_nonlin)
+                )
+            else:
+                model.add_module(
+                    "pool" + suffix,
+                    later_pool_class(
+                        kernel_size=(5, 1),
+                        stride=(1, 1),
+                    ),
+                )
+                model.add_module(
+                    "pool_nonlin" + suffix, nn.Identity()#Expression(self.later_pool_nonlin)
+                )
 
         add_conv_pool_block(
-            model, n_filters_conv, self.n_filters_2, self.filter_length_2, 2
+            model, n_filters_conv, self.n_filters_2, self.filter_length_2, 2, False
         )
         add_conv_pool_block(
-            model, self.n_filters_2, self.n_filters_3, self.filter_length_3, 3
+            model, self.n_filters_2, self.n_filters_3, self.filter_length_3, 3, False
         )
         add_conv_pool_block(
-            model, self.n_filters_3, self.n_filters_4, self.filter_length_4, 4
+            model, self.n_filters_3, self.n_filters_4, self.filter_length_4, 4, True
         )
 
         # model.add_module('drop_classifier', nn.Dropout(p=self.drop_prob))
@@ -201,9 +204,8 @@ class Deep4Net(BaseModel):
                 bias=True,
             ),
         )
-        model.add_module("sigmoid", nn.Sigmoid())
+        model.add_module("softmax", nn.LogSoftmax(dim=1))
         model.add_module("squeeze", Expression(_squeeze_final_output))
-        #model.add_module("redistribute", Expression(_distribute_probability_))
 
         # Initialization, xavier is same as in our paper...
         # was default from lasagne
@@ -233,7 +235,7 @@ class Deep4Net(BaseModel):
 
         init.xavier_uniform_(model.conv_classifier.weight, gain=1)
         init.constant_(model.conv_classifier.bias, 0)
-        #model.add_module("print", PrintLayer())
+        
         # Start in eval mode
         model.eval()
         return model
