@@ -5,7 +5,30 @@
     "depth": 2,
     "impl_style": "rtl"
   },
+  "ConvolutionInputGenerator1D_0": {
+    "SIMD": 62,
+    "ram_style": "distributed"
+  },
   "StreamingDataWidthConverter_Batch_0": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_2": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingFCLayer_Batch_0": {
+    "PE": 1,
+    "SIMD": 2,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_1": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_2": {
     "impl_style": "hls"
   },
   "Thresholding_Batch_0": {
@@ -14,54 +37,19 @@
     "mem_mode": "const",
     "runtime_writeable_weights": 0
   },
-  "StreamingDataWidthConverter_Batch_1": {
-    "impl_style": "hls"
-  },
-  "ConvolutionInputGenerator1D_0": {
-    "SIMD": 25,
-    "ram_style": "distributed"
-  },
-  "StreamingDataWidthConverter_Batch_2": {
-    "impl_style": "hls"
-  },
-  "StreamingFIFO_6": {
-    "ram_style": "auto",
-    "depth": 4096,
-    "impl_style": "vivado"
-  },
-  "StreamingFCLayer_Batch_0": {
-    "PE": 1,
-    "SIMD": 1,
-    "ram_style": "auto",
-    "resType": "lut",
-    "mem_mode": "decoupled",
-    "runtime_writeable_weights": 0
-  },
   "StreamingDataWidthConverter_Batch_3": {
     "impl_style": "hls"
+  },
+  "ConvolutionInputGenerator1D_1": {
+    "SIMD": 25,
+    "ram_style": "distributed"
   },
   "StreamingDataWidthConverter_Batch_4": {
     "impl_style": "hls"
   },
-  "Thresholding_Batch_1": {
-    "PE": 1,
-    "ram_style": "distributed",
-    "mem_mode": "const",
-    "runtime_writeable_weights": 0
-  },
-  "StreamingDataWidthConverter_Batch_5": {
-    "impl_style": "hls"
-  },
-  "ConvolutionInputGenerator1D_1": {
-    "SIMD": 50,
-    "ram_style": "distributed"
-  },
-  "StreamingDataWidthConverter_Batch_6": {
-    "impl_style": "hls"
-  },
-  "StreamingFIFO_14": {
+  "StreamingFIFO_10": {
     "ram_style": "auto",
-    "depth": 4096,
+    "depth": 1024,
     "impl_style": "vivado"
   },
   "StreamingFCLayer_Batch_1": {
@@ -72,29 +60,29 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
-  "StreamingDataWidthConverter_Batch_7": {
+  "StreamingDataWidthConverter_Batch_5": {
     "impl_style": "hls"
   },
-  "StreamingDataWidthConverter_Batch_8": {
+  "StreamingDataWidthConverter_Batch_6": {
     "impl_style": "hls"
   },
-  "Thresholding_Batch_2": {
+  "Thresholding_Batch_1": {
     "PE": 1,
     "ram_style": "distributed",
     "mem_mode": "const",
     "runtime_writeable_weights": 0
   },
-  "StreamingDataWidthConverter_Batch_9": {
+  "StreamingDataWidthConverter_Batch_7": {
     "impl_style": "hls"
   },
   "ConvolutionInputGenerator1D_2": {
-    "SIMD": 100,
+    "SIMD": 50,
     "ram_style": "distributed"
   },
-  "StreamingDataWidthConverter_Batch_10": {
+  "StreamingDataWidthConverter_Batch_8": {
     "impl_style": "hls"
   },
-  "StreamingFIFO_22": {
+  "StreamingFIFO_18": {
     "ram_style": "auto",
     "depth": 4096,
     "impl_style": "vivado"
@@ -107,10 +95,45 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
+  "StreamingDataWidthConverter_Batch_9": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_10": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_2": {
+    "PE": 1,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
   "StreamingDataWidthConverter_Batch_11": {
     "impl_style": "hls"
   },
+  "ConvolutionInputGenerator1D_3": {
+    "SIMD": 100,
+    "ram_style": "distributed"
+  },
   "StreamingDataWidthConverter_Batch_12": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_26": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingFCLayer_Batch_3": {
+    "PE": 1,
+    "SIMD": 1,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_13": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_14": {
     "impl_style": "hls"
   },
   "Thresholding_Batch_3": {
@@ -119,7 +142,7 @@
     "mem_mode": "const",
     "runtime_writeable_weights": 0
   },
-  "StreamingFCLayer_Batch_3": {
+  "StreamingFCLayer_Batch_4": {
     "PE": 1,
     "SIMD": 1,
     "ram_style": "auto",
