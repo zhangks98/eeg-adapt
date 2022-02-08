@@ -85,7 +85,7 @@ class QuantDeep4Net(BaseModel):
         first_pool_class = pool_class_dict[self.first_pool_mode]
         later_pool_class = pool_class_dict[self.later_pool_mode]
         model = nn.Sequential()
-        #model.add_module("quantizer", qnn.QuantHardTanh(act_quant=InputQuantizer))
+        model.add_module("quantizer", qnn.QuantHardTanh(act_quant=InputQuantizer))
         if self.split_first_layer:
             model.add_module("dimshuffle", Expression(_transpose_time_to_spat))
             model.add_module(
