@@ -11,7 +11,9 @@ for i in range(1,55):
     x = json.load(f)
     #print('Acuraccy:', 1-x['misclass'])
     results[i-1] = 1-x['misclass']
+    print(1-x['misclass'])
     f.close()
+
 
 print("------Results------")
 print("Mean: ", results.mean())

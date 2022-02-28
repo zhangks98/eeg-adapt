@@ -63,6 +63,7 @@ class QuantDeep4Net(BaseModel):
         batch_norm=True,
         batch_norm_alpha=0.1,
         stride_before_pool=False,
+        quant_bit_width=6,
     ):
         if final_conv_length == "auto":
             assert input_time_length is not None
@@ -118,7 +119,7 @@ class QuantDeep4Net(BaseModel):
                     (self.filter_time_length, 1),
                     stride=(conv_stride, 1),
                     bias=not self.batch_norm,
-                    weight_bit_width=6,
+                    weight_bit_width=self.quant_bit_width,
                     #bias_quant=BiasQuant,
                 ),
             )
@@ -133,14 +134,14 @@ class QuantDeep4Net(BaseModel):
                     eps=1e-5,
                 ),
             )
-        model.add_module("conv_nonlin", qnn.QuantReLU(bit_width=6))#Expression(self.first_nonlin))
+        model.add_module("conv_nonlin", qnn.QuantReLU(bit_width=self.quant_bit_width))#Expression(self.first_nonlin))
         model.add_module(
             "pool",
             first_pool_class(
                 kernel_size=(self.pool_time_length, 1), stride=(pool_stride, 1)
             ),
         )
-        model.add_module("pool_nonlin", qnn.QuantIdentity(bit_width=6))#Expression(self.first_pool_nonlin))
+        model.add_module("pool_nonlin", qnn.QuantIdentity(bit_width=self.quant_bit_width))#Expression(self.first_pool_nonlin))
 
         def add_conv_pool_block(
             model, n_filters_before, n_filters, filter_length, block_nr, last
@@ -155,7 +156,7 @@ class QuantDeep4Net(BaseModel):
                     (filter_length, 1),
                     stride=(conv_stride, 1),
                     bias=not self.batch_norm,
-                    weight_bit_width=6,
+                    weight_bit_width=self.quant_bit_width,
                     #bias_quant=BiasQuant,
                 ),
             )
@@ -169,7 +170,7 @@ class QuantDeep4Net(BaseModel):
                         eps=1e-5,
                     ),
                 )
-            model.add_module("nonlin" + suffix, qnn.QuantReLU(bit_width=6))
+            model.add_module("nonlin" + suffix, qnn.QuantReLU(bit_width=self.quant_bit_width))
 
                 
             if not last:
@@ -181,7 +182,7 @@ class QuantDeep4Net(BaseModel):
                     ),
                 )
                 model.add_module(
-                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=6)
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=self.quant_bit_width)
                 )
             else:
                 model.add_module(
@@ -192,7 +193,7 @@ class QuantDeep4Net(BaseModel):
                     ),
                 )
                 model.add_module(
-                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=6, return_quant_tensor=True)
+                    "pool_nonlin" + suffix, qnn.QuantIdentity(bit_width=self.quant_bit_width, return_quant_tensor=True)
                 )
 
 
@@ -226,7 +227,7 @@ class QuantDeep4Net(BaseModel):
                 self.n_classes,
                 (self.final_conv_length, 1),
                 bias=True,
-                weight_bit_width=6,
+                weight_bit_width=self.quant_bit_width,
                 bias_quant=BiasQuant,
             ),
         )
