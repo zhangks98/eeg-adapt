@@ -64,8 +64,8 @@ for subj in subjs:
     # Get data for within-subject classification
     X, Y = get_data(subj)
     #print('Shape: ', X.shape)
-    X_train, Y_train = X[:200], Y[:200]
-    X_val, Y_val = X[200:300], Y[200:300]
+    X_train, Y_train = X[50:250], Y[50:250]
+    X_val, Y_val = X[250:300], Y[250:300]
     X_test, Y_test = X[300:], Y[300:]
 
     suffix = 's' + str(subj)
@@ -75,7 +75,7 @@ for subj in subjs:
     # final_conv_length = auto ensures we only get a single output in the time dimension
     model = QuantDeep4Net(in_chans=in_chans, n_classes=n_classes,
                      input_time_length=X.shape[2],
-                     final_conv_length=1, split_first_layer=False, quant_bit_width=6).cuda()
+                     final_conv_length=1, split_first_layer=False, quant_bit_width=2).cuda()
 
     # these are good values for the deep model
     optimizer = AdamW(model.parameters(), lr=1 * 0.01, weight_decay=0.5*0.001)

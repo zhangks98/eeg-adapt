@@ -1,0 +1,1 @@
+{'Mean Throughput (images/sec)': 1606.388881694059, 'Std': 135.45843384562872, 'N': 1000, 'Batch Size': 400}
