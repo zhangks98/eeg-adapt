@@ -59,15 +59,15 @@ def get_data(subj):
     dpath = '/s' + str(subj)
     X = dfile[pjoin(dpath, 'X')]
     Y = dfile[pjoin(dpath, 'Y')]
-    #chan = [7,8,9,10,12,13,14,17,18,19,20,32,33,34,35,36,37,38,39,40]; X=X[:,chan]
+    chan = [7,8,9,10,12,13,14,17,18,19,20,32,33,34,35,36,37,38,39,40]; X=X[:,chan]
     return X[:], Y[:]
 
 
 for subj in subjs:
     # Get data for within-subject classification
     X, Y = get_data(subj)
-    X_train, Y_train = X[50:250], Y[50:250]
-    X_val, Y_val = X[250:300], Y[250:300]
+    X_train, Y_train = X[0:200], Y[0:200]
+    X_val, Y_val = X[200:300], Y[200:300]
     X_test, Y_test = X[300:], Y[300:]
 
     suffix = 's' + str(subj)

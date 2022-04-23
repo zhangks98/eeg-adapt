@@ -57,6 +57,7 @@ def get_data(subj):
     dpath = '/s' + str(subj)
     X = dfile[pjoin(dpath, 'X')]
     Y = dfile[pjoin(dpath, 'Y')]
+    # chan = [7,8,9,10,12,13,14,17,18,19,20,32,33,34,35,36,37,38,39,40]; X=X[:,chan]
     return X[:], Y[:]
 
 
