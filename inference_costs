@@ -1,0 +1,54 @@
+Inference cost for 8-bit
+{
+  "discount_sparsity": true,
+  "mem_o_FLOAT32": 43002.0,
+  "mem_w_INT8": 248102.0,
+  "op_mac_FLOAT32_INT8": 19590397.0,
+  "total_bops": 5015141632.0,
+  "total_mem_o_bits": 1376064.0,
+  "total_mem_w_bits": 1984816.0,
+  "unsupported": "{'MultiThreshold', 'Gather', 'LogSoftmax'}"
+}
+
+
+-------------------------------------------------------------
+
+Inference cost for 6-bit
+{
+  "discount_sparsity": true,
+  "mem_o_FLOAT32": 43002.0,
+  "mem_w_INT6": 240506.0,
+  "op_mac_FLOAT32_INT6": 19005220.0,
+  "total_bops": 3649002240.0,
+  "total_mem_o_bits": 1376064.0,
+  "total_mem_w_bits": 1443036.0,
+  "unsupported": "{'MultiThreshold', 'Gather', 'LogSoftmax'}"
+}
+
+-------------------------------------------------------------
+
+Inference cost for 4-bit
+{
+  "discount_sparsity": true,
+  "mem_o_FLOAT32": 43002.0,
+  "mem_w_INT4": 208243.0,
+  "op_mac_FLOAT32_INT4": 16219529.0,
+  "total_bops": 2076099712.0,
+  "total_mem_o_bits": 1376064.0,
+  "total_mem_w_bits": 832972.0,
+  "unsupported": "{'MultiThreshold', 'Gather', 'LogSoftmax'}"
+}
+
+-------------------------------------------------------------
+
+Inference cost for  2-bit
+{
+  "discount_sparsity": true,
+  "mem_o_FLOAT32": 43002.0,
+  "mem_w_INT2": 16230.0,
+  "op_mac_FLOAT32_INT2": 2459732.0,
+  "total_bops": 157422848.0,
+  "total_mem_o_bits": 1376064.0,
+  "total_mem_w_bits": 32460.0,
+  "unsupported": "{'MultiThreshold', 'Gather', 'LogSoftmax'}"
+}

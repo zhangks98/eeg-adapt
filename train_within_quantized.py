@@ -76,7 +76,7 @@ for subj in subjs:
     # final_conv_length = auto ensures we only get a single output in the time dimension
     model = QuantDeep4Net(in_chans=in_chans, n_classes=n_classes,
                      input_time_length=X.shape[2],
-                     final_conv_length=1, split_first_layer=False, quant_bit_width=2).cuda()
+                     final_conv_length=1, split_first_layer=False, quant_bit_width=8).cuda()
 
     # these are good values for the deep model
     optimizer = AdamW(model.parameters(), lr=1 * 0.01, weight_decay=0.5*0.001)
